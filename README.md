@@ -1,2 +1,2 @@
 # WinG
-текст
+## GUI library based on WinAPI
