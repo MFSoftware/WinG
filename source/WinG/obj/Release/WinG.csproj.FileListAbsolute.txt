@@ -1,0 +1,5 @@
+C:\Users\Nikita\source\repos\WinG\WinG\obj\Release\WinG.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\source\repos\WinG\WinG\bin\Release\WinG.dll
+C:\Users\Nikita\source\repos\WinG\WinG\bin\Release\WinG.pdb
+C:\Users\Nikita\source\repos\WinG\WinG\obj\Release\WinG.dll
+C:\Users\Nikita\source\repos\WinG\WinG\obj\Release\WinG.pdb
