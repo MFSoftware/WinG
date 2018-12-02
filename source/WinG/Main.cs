@@ -13,7 +13,7 @@ namespace WinG
         LiteGray = 1,
         Gray = 2,
         DarkGray = 3,
-        BLACK_BRUSH = 4,
+        Black_Brush = 4,
         NULL_BRUSH = 5,
         HOLLOW_BRUSH = NULL_BRUSH,
         White = 6,
@@ -100,6 +100,11 @@ namespace WinG
     {
         Ok = 0,
         OkCancel = 1,
+        AbortRetryIgnore = 2,
+        OkNoCancel = 3,
+        YesNo = 4,
+        RetryCancel = 5,
+        CancelRetryContinue = 6,
         Error = 16,
         Warning = 48
     }

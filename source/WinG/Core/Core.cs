@@ -66,20 +66,12 @@ namespace WinG.Core
             WS_GROUP = 0x20000,
             WS_HSCROLL = 0x100000,  
             WS_MAXIMIZE = 0x1000000,
-
-            /// <summary>The window has a maximize button. Cannot be combined with the WS_EX_CONTEXTHELP style. The WS_SYSMENU style must also be specified.</summary>   
-            WS_MAXIMIZEBOX = 0x10000,
-
-            /// <summary>The window is initially minimized.</summary>  
+            WS_MAXIMIZEBOX = 0x10000,  
             WS_MINIMIZE = 0x20000000,
-
             /// <summary>The window has a minimize button. Cannot be combined with the WS_EX_CONTEXTHELP style. The WS_SYSMENU style must also be specified.</summary>  
             WS_MINIMIZEBOX = 0x20000,
-
             /// <summary>The window is an overlapped window. An overlapped window has a title bar and a border.</summary>  
             WS_OVERLAPPED = 0x0,
-
-            /// <summary>The window is an overlapped window.</summary>  
             WS_OVERLAPPEDWINDOW = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_SIZEFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX,
 
             /// <summary>The window is a pop-up window. This style cannot be used with the WS_CHILD style.</summary>  
@@ -98,7 +90,8 @@ namespace WinG.Core
             /// <summary>The window is initially visible. This style can be turned on and off by using the ShowWindow or SetWindowPos function.</summary>  
             WS_VISIBLE = 0x10000000, 
             WS_VSCROLL = 0x200000,
-            BS_DEFPUSHBUTTON = 1
+            BS_DEFPUSHBUTTON = 1,
+            BS_CHECKBOX = 0x00000002
         }
 
         [Flags]
@@ -172,6 +165,9 @@ namespace WinG.Core
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern bool OpenClipboard(IntPtr hWndNewOwner);
+
+        [DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
+        public static extern IntPtr DeleteObject(IntPtr hDc);
 
         [DllImport("kernel32.dll")]
         public static extern IntPtr GetConsoleWindow();
@@ -401,36 +397,14 @@ namespace WinG.Core
             /// Applications never send this message directly. It is sent only by Active Accessibility in response to calls to AccessibleObjectFromPoint, AccessibleObjectFromEvent, or AccessibleObjectFromWindow. However, server applications handle this message.   
             /// </summary>  
             GETOBJECT = 0x003D,
-            /// <summary>  
-            /// The WM_COMPACTING message is sent to all top-level windows when the system detects more than 12.5 percent of system time over a 30- to 60-second interval is being spent compacting memory. This indicates that system memory is low.  
-            /// </summary>  
             COMPACTING = 0x0041,
-            /// <summary>  
-            /// WM_COMMNOTIFY is Obsolete for Win32-Based Applications  
-            /// </summary>  
             [Obsolete]
             COMMNOTIFY = 0x0044,
-            /// <summary>  
-            /// The WM_WINDOWPOSCHANGING message is sent to a window whose size, position, or place in the Z order is about to change as a result of a call to the SetWindowPos function or another window-management function.  
-            /// </summary>  
             WINDOWPOSCHANGING = 0x0046,
-            /// <summary>  
-            /// The WM_WINDOWPOSCHANGED message is sent to a window whose size, position, or place in the Z order has changed as a result of a call to the SetWindowPos function or another window-management function.  
-            /// </summary>  
             WINDOWPOSCHANGED = 0x0047,
-            /// <summary>  
-            /// Notifies applications that the system, typically a battery-powered personal computer, is about to enter a suspended mode.  
-            /// Use: POWERBROADCAST  
-            /// </summary>  
             [Obsolete]
             POWER = 0x0048,
-            /// <summary>  
-            /// An application sends the WM_COPYDATA message to pass data to another application.   
-            /// </summary>  
-            COPYDATA = 0x004A,
-            /// <summary>  
-            /// The WM_CANCELJOURNAL message is posted to an application when a user cancels the application's journaling activities. The message is posted with a NULL window handle.   
-            /// </summary>  
+            COPYDATA = 0x004A,  
             CANCELJOURNAL = 0x004B,
             /// <summary>  
             /// Sent by a common control to its parent window when an event has occurred or the control requires some information.   

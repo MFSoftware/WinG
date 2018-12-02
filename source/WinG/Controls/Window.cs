@@ -163,12 +163,17 @@ namespace WinG
 
         public void Close()
         {
-            Core.Core.EndTask(Handle, true, true);
+            Core.Core.DestroyWindow(Handle);
         }
 
         public void Free()
         {
             Core.Core.DestroyWindow(Handle);
+        }
+
+        public void Add(Control ctrl)
+        {
+            Core.Core.SetParent(ctrl.Handle, Handle);
         }
     }
 }

@@ -11,6 +11,38 @@ namespace WinG
     {
         public IntPtr Handle = IntPtr.Zero;
 
+        public int Width
+        {
+            set
+            {
+                Rect r = new Rect();
+                Core.Core.GetWindowRect(Handle, ref r);
+                Core.Core.SetWindowPos(Handle, 0, 0, 0, value, r.Height, 1);
+            }
+            get
+            {
+                Rect r = new Rect();
+                Core.Core.GetWindowRect(Handle, ref r);
+                return r.Width;
+            }
+        }
+
+        public int Height
+        {
+            set
+            {
+                Rect r = new Rect();
+                Core.Core.GetWindowRect(Handle, ref r);
+                Core.Core.SetWindowPos(Handle, 0, 0, 0, r.Width, value, 1);
+            }
+            get
+            {
+                Rect r = new Rect();
+                Core.Core.GetWindowRect(Handle, ref r);
+                return r.Height;
+            }
+        }
+
         public bool Visible
         {
             set
