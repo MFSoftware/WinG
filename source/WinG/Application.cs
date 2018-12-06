@@ -48,13 +48,13 @@ namespace WinG
                     Core.Core.GetClientRect(hWnd, out rect);
                     Core.Core.EndPaint(hWnd, ref ps);
                     return IntPtr.Zero;
-                    break;
                 case Core.Core.WM.DESTROY:
                     Core.Core.PostQuitMessage(0);
                     return IntPtr.Zero;
-                    break;
+                default:
+                    return Core.Core.DefWindowProc(hWnd, (Core.Core.WM)msg, wParam, lParam);
             }
-            return Core.Core.DefWindowProc(hWnd, (Core.Core.WM)msg, wParam, lParam);
+            //return Core.Core.DefWindowProc(hWnd, (Core.Core.WM)msg, wParam, lParam);
         }
 
         public static UInt16 RegisterClass(string menu, string className)
@@ -73,9 +73,15 @@ namespace WinG
             wcx.cbWndExtra = 0;
             wcx.hbrBackground = (IntPtr) WindowColor.White;
             wcx.hInstance = Process.GetCurrentProcess().Handle;
+            wcx.hCursor = Core.Core.LoadCursor(IntPtr.Zero, CursorStyle.IDC_ARROW);
             wcx.lpszMenuName = menu;
             wcx.lpszClassName = className;
             return Core.Core.RegisterClassEx2(ref wcx);
+        }
+
+        public static void Exit(int code = 0)
+        {
+            Core.Core.PostQuitMessage(code);
         }
     }
 }

@@ -103,6 +103,7 @@ namespace WinG
         {
             set
             {
+                // Core.Core.SendMessage(Handle, 0x000C, 0, "");
                 Core.Core.SetWindowText(Handle, value);
             }
             get

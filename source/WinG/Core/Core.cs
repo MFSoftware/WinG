@@ -1005,6 +1005,15 @@ namespace WinG.Core
         public static extern int SetClassLongA(int hwnd, int nIndex, int dwNewLong);
 
         [DllImport("user32.dll")]
+        public static extern void SendMessage(IntPtr hwnd, WM m, int wp, int lp);
+
+        [DllImport("gdi32.dll")]
+        public static extern IntPtr CreateFont(int nHeight, int nWidth, int nEscapement,
+        int nOrientation, int fnWeight, uint fdwItalic, uint fdwUnderline, uint
+        fdwStrikeOut, uint fdwCharSet, uint fdwOutputPrecision, uint
+        fdwClipPrecision, uint fdwQuality, uint fdwPitchAndFamily, string lpszFace);
+
+        [DllImport("user32.dll")]
         public static extern bool UnregisterClass(string ClassName, IntPtr Instance);
 
         [DllImport("user32.dll")]

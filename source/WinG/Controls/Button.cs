@@ -12,11 +12,11 @@ namespace WinG
     {
         #region Properties
 
-        public ButtonStyle Style
+        public Font Font
         {
             set
             {
-                Core.Core.SetClassLongA(Handle.ToInt32(), -26, (int) value);
+                Core.Core.SendMessage(Handle, Core.Core.WM.SETFONT, value.Handle.ToInt32(), 0);
             }
         }
 

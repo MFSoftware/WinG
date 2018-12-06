@@ -61,6 +61,7 @@
     <Compile Include="Controls\Window.cs" />
     <Compile Include="Drawing\Point.cs" />
     <Compile Include="Drawing\Rect.cs" />
+    <Compile Include="Controls\Font.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Core\Core.cs" />
     <Compile Include="Message.cs" />
