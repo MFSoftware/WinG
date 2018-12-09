@@ -11,13 +11,21 @@ namespace WinG
     {
         public IntPtr Handle = IntPtr.Zero;
 
+        public Font Font
+        {
+            set
+            {
+                Core.Core.SendMessage(Handle, Core.Core.WM.SETFONT, value.Handle.ToInt32(), 0);
+            }
+        }
+
         public int Width
         {
             set
             {
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
-                Core.Core.SetWindowPos(Handle, 0, 0, 0, value, r.Height, 1);
+                Core.Core.SetWindowPos(Handle, 0, 0, 0, value, r.Height, Core.Core.SWP.NOMOVE);
             }
             get
             {
@@ -33,7 +41,7 @@ namespace WinG
             {
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
-                Core.Core.SetWindowPos(Handle, 0, 0, 0, r.Width, value, 1);
+                Core.Core.SetWindowPos(Handle, 0, 0, 0, r.Width, value, Core.Core.SWP.NOMOVE);
             }
             get
             {
@@ -128,7 +136,7 @@ namespace WinG
             {
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
-                Core.Core.SetWindowPos(Handle, 0, value, r.Y, 0, 0, 0x0001);
+                Core.Core.SetWindowPos(Handle, 0, value, r.Y, 0, 0, Core.Core.SWP.NOSIZE);
             }
         }
 
@@ -144,7 +152,7 @@ namespace WinG
             {
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
-                Core.Core.SetWindowPos(Handle, 0, r.X, value, 0, 0, 0x0001);
+                Core.Core.SetWindowPos(Handle, 0, r.X, value, 0, 0, Core.Core.SWP.NOSIZE);
             }
         }
 

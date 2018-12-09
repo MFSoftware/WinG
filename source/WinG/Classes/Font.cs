@@ -10,7 +10,8 @@ namespace WinG
     {
         public IntPtr Handle;
 
-        public string Family = "Times New Roman";
+        public string Family = "System";
+        public int Size = 4;
 
         public bool Italic = false;
         public bool Underline = false;
@@ -19,7 +20,7 @@ namespace WinG
         {
             Handle = Core.Core.CreateFont(
             -12,                           
-            4,                  
+            Size,                  
             0,                            
             0,                            
             1000,

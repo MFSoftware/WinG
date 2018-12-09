@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using WinG.Drawing;
@@ -972,6 +973,26 @@ namespace WinG.Core
             SYSTIMER = 0x118
         }
 
+        public static class SWP
+        {
+            public static readonly int
+            NOSIZE = 0x0001,
+            NOMOVE = 0x0002,
+            NOZORDER = 0x0004,
+            NOREDRAW = 0x0008,
+            NOACTIVATE = 0x0010,
+            DRAWFRAME = 0x0020,
+            FRAMECHANGED = 0x0020,
+            SHOWWINDOW = 0x0040,
+            HIDEWINDOW = 0x0080,
+            NOCOPYBITS = 0x0100,
+            NOOWNERZORDER = 0x0200,
+            NOREPOSITION = 0x0200,
+            NOSENDCHANGING = 0x0400,
+            DEFERERASE = 0x2000,
+            ASYNCWINDOWPOS = 0x4000;
+        }
+
         [StructLayout(LayoutKind.Sequential, Pack = 8)]
         public struct MSG
         {
@@ -1125,7 +1146,7 @@ namespace WinG.Core
         public static extern void PostQuitMessage(int nExitCode);
 
         [DllImport("user32.dll")]
-        public static extern IntPtr LoadIcon(IntPtr hInstance, string lpIconName);
+        public static extern IntPtr LoadIcon(IntPtr hInstance, int lpIconName);
 
         [DllImport("user32.dll")]
         public static extern IntPtr LoadIcon(IntPtr hInstance, IntPtr lpIConName);
@@ -1157,5 +1178,33 @@ namespace WinG.Core
 
         [DllImport("user32.dll", SetLastError = true, EntryPoint = "RegisterClassEx")]
         public static extern UInt16 RegisterClassEx2([In] ref WNDCLASSEX lpwcx);
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetDesktopWindow();
+
+        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool RemoveDirectory(string lpPathName);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool EmptyClipboard();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool CloseClipboard();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern void SetDataObject(string text, bool b);
+
+        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool CreateDirectory(string lpPathName, SecurityAttribute lpSecurityAttributes = null);
+
+        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        public static extern uint GetCurrentDirectory(uint nBufferLength, [Out] StringBuilder lpBuffer);
+
+        [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        public static extern IntPtr FindWindowEx(IntPtr parentHandle, IntPtr childAfter, string lclassName, string windowTitle);
     }
 }

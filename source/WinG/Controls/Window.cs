@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,11 +53,11 @@ namespace WinG
             }
         }
 
-        public string Icon
+        public Icon Icon
         {
             set
             {
-                Core.Core.SetClassLongA(Handle.ToInt32(), -14, Core.Core.ExtractIcon(Handle, value, 0).ToInt32());
+                Core.Core.SetClassLongA(Handle.ToInt32(), -14, value.Handle.ToInt32());
             }
         }
 

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
+    <Compile Include="Clipboard.cs" />
     <Compile Include="Controls\ComboBox.cs" />
     <Compile Include="Controls\GroupBox.cs" />
     <Compile Include="Controls\Image.cs" />
@@ -59,9 +60,15 @@
     <Compile Include="Controls\ProgressBar.cs" />
     <Compile Include="Controls\Timer.cs" />
     <Compile Include="Controls\Window.cs" />
+    <Compile Include="Desktop.cs" />
     <Compile Include="Drawing\Point.cs" />
     <Compile Include="Drawing\Rect.cs" />
-    <Compile Include="Controls\Font.cs" />
+    <Compile Include="Classes\Font.cs" />
+    <Compile Include="Classes\Icon.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="IO\Directory.cs" />
+    <Compile Include="IO\File.cs" />
+    <Compile Include="Keyboard\Keyboard.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Core\Core.cs" />
     <Compile Include="Message.cs" />

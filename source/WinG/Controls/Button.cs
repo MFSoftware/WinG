@@ -12,13 +12,7 @@ namespace WinG
     {
         #region Properties
 
-        public Font Font
-        {
-            set
-            {
-                Core.Core.SendMessage(Handle, Core.Core.WM.SETFONT, value.Handle.ToInt32(), 0);
-            }
-        }
+        
 
         #endregion
 
