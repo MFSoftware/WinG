@@ -22,11 +22,11 @@ namespace WinG
         IDI_INFORMATION = IDI_ASTERISK
     }
 
-    public enum WindowColor
+    public enum Color
     {
         LiteGray = 1,
         Gray = 2,
-        DarkGray = 3,
+        PoloBlue = 3,
         Black_Brush = 4,
         NULL_BRUSH = 5,
         HOLLOW_BRUSH = NULL_BRUSH,
@@ -41,8 +41,28 @@ namespace WinG
         DEFAULT_PALETTE = 15,
         SYSTEM_FIXED_FONT = 16,
         DEFAULT_GUI_FONT = 17,
-        DC_BRUSH = 18,
+        DarkGray = 18,
         DC_PEN = 19,
+    }
+
+    public static class ColorLoader
+    {
+        public static Color FromName(string name)
+        {
+            switch (name.ToLower())
+            {
+                case "litegray":
+                    return Color.LiteGray;
+                case "black":
+                    return Color.Black;
+                case "poloblue":
+                    return Color.PoloBlue;
+                case "darkgray":
+                    return Color.DarkGray;
+                default:
+                    return Color.White;
+            }
+        }
     }
 
     public enum ButtonStyle

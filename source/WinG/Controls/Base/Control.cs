@@ -19,6 +19,17 @@ namespace WinG
             }
         }
 
+        public string Class
+        {
+            get
+            {
+                StringBuilder Buff = new StringBuilder(256);
+                if (Core.Core.GetClassName(Handle, Buff, 256) > 0)
+                    return Buff.ToString();
+                return null;
+            }
+        }
+
         public int Width
         {
             set
@@ -75,11 +86,7 @@ namespace WinG
         {
             get
             {
-                StringBuilder Buff = new StringBuilder(256);
-                if (Core.Core.GetClassName(Handle, Buff, 256) > 0)
-                    return Buff.ToString();
-
-                return null;
+                return string.Empty;
             }
         }
 
@@ -111,7 +118,6 @@ namespace WinG
         {
             set
             {
-                // Core.Core.SendMessage(Handle, 0x000C, 0, "");
                 Core.Core.SetWindowText(Handle, value);
             }
             get
@@ -136,7 +142,7 @@ namespace WinG
             {
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
-                Core.Core.SetWindowPos(Handle, 0, value, r.Y, 0, 0, Core.Core.SWP.NOSIZE);
+                Core.Core.MoveWindow(Handle, value, r.Y, r.Width, r.Height, false);
             }
         }
 
@@ -152,13 +158,20 @@ namespace WinG
             {
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
-                Core.Core.SetWindowPos(Handle, 0, r.X, value, 0, 0, Core.Core.SWP.NOSIZE);
+                Core.Core.MoveWindow(Handle, r.X, value, r.Width, r.Height, false);
             }
         }
 
         public void Free()
         {
             Core.Core.DestroyWindow(Handle);
+            Core.Core.ZeroMemory(this);
+            Handle = IntPtr.Zero;
+        }
+
+        public void LoadFromName(string name)
+        {
+            Handle = Core.Core.FindWindowByCaption(IntPtr.Zero, name);
         }
     }
 }

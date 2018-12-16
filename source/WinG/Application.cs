@@ -51,10 +51,8 @@ namespace WinG
                 case Core.Core.WM.DESTROY:
                     Core.Core.PostQuitMessage(0);
                     return IntPtr.Zero;
-                default:
-                    return Core.Core.DefWindowProc(hWnd, (Core.Core.WM)msg, wParam, lParam);
             }
-            //return Core.Core.DefWindowProc(hWnd, (Core.Core.WM)msg, wParam, lParam);
+            return Core.Core.DefWindowProc(hWnd, (Core.Core.WM)msg, wParam, lParam);
         }
 
         public static UInt16 RegisterClass(string menu, string className)
@@ -63,16 +61,13 @@ namespace WinG
             wcx.cbSize = Marshal.SizeOf(wcx);
             wcx.style = (int)(Core.Core.ClassStyles.VerticalRedraw | Core.Core.ClassStyles.HorizontalRedraw);
 
-            unsafe
-            {
-                IntPtr address2 = Marshal.GetFunctionPointerForDelegate((Delegate)(Core.Core.WndProc)MainWndProc);
-                wcx.lpfnWndProc = address2;
-            }
+            IntPtr address2 = Marshal.GetFunctionPointerForDelegate((Delegate)(Core.Core.WndProc)MainWndProc);
+            wcx.lpfnWndProc = address2;
 
             wcx.cbClsExtra = 0;
             wcx.cbWndExtra = 0;
-            wcx.hbrBackground = (IntPtr) WindowColor.White;
-            wcx.hInstance = Process.GetCurrentProcess().Handle;
+            wcx.hbrBackground = (IntPtr) Color.White;
+            wcx.hInstance = System.Diagnostics.Process.GetCurrentProcess().Handle;
             wcx.hCursor = Core.Core.LoadCursor(IntPtr.Zero, CursorStyle.IDC_ARROW);
             wcx.lpszMenuName = menu;
             wcx.lpszClassName = className;
@@ -82,6 +77,11 @@ namespace WinG
         public static void Exit(int code = 0)
         {
             Core.Core.PostQuitMessage(code);
+        }
+
+        public static void Terminate(int code = 0)
+        {
+            Core.Core.FatalExit(code);
         }
     }
 }

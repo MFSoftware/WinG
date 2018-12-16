@@ -16,6 +16,24 @@ namespace WinG
 
         public IntPtr Handle = IntPtr.Zero;
 
+        public Control[] Controls
+        {
+            get
+            {
+                IntPtr[] child = new IntPtr[15];
+                List<Control> forRet = new List<Control>();
+                child[0] = Core.Core.GetWindow(Handle, 5);
+
+                for (int i = 1; i <= 5; i++)
+                {
+                    Control c = new Control();
+                    c.Handle = Core.Core.GetWindow(child[i - 1], 2);
+                    forRet.Add(c);
+                }
+                return forRet.ToArray();
+            }
+        }
+
         public WindowState WindowState
         {
             get
@@ -41,11 +59,11 @@ namespace WinG
             }
         }
 
-        public WindowColor BackColor
+        public Color BackColor
         {
             get
             {
-                return (WindowColor) Core.Core.GetClassLong(Handle, -10);
+                return (Color) Core.Core.GetClassLong(Handle, -10);
             }
             set
             {
@@ -124,7 +142,7 @@ namespace WinG
                 300,
                 IntPtr.Zero,
                 IntPtr.Zero,
-                Process.GetCurrentProcess().Handle,
+                System.Diagnostics.Process.GetCurrentProcess().Handle,
                 IntPtr.Zero);
         }
 
@@ -132,7 +150,7 @@ namespace WinG
         {
             Handle = Core.Core.CreateWindowEx2(
                 Core.Core.WindowStylesEx.WS_EX_APPWINDOW,
-                Application.RegisterClass(Core.Core.GenRandomString(5), Core.Core.GenRandomString(5)),
+                Application.RegisterClass("Window", "Window"),
                 string.Empty,
                 Core.Core.WindowStyles.WS_OVERLAPPEDWINDOW,
                 0,
@@ -141,7 +159,7 @@ namespace WinG
                 300,
                 IntPtr.Zero,
                 IntPtr.Zero,
-                Process.GetCurrentProcess().Handle,
+                System.Diagnostics.Process.GetCurrentProcess().Handle,
                 IntPtr.Zero);
         }
 
@@ -176,6 +194,11 @@ namespace WinG
         public void Add(Control ctrl)
         {
             Core.Core.SetParent(ctrl.Handle, Handle);
+        }
+
+        public void ToBack()
+        {
+            Core.Core.SetForegroundWindow(Handle);
         }
     }
 }

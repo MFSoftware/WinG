@@ -12,7 +12,29 @@ namespace WinG
     {
         #region Properties
 
-        
+        public Color FontColor
+        {
+            set
+            {
+                Core.Core.SetTextColor(Handle, (int) value);
+            }
+            get
+            {
+                return (Color) Core.Core.GetTextColor(Handle);
+            }
+        }
+
+        public Color BackColor
+        {
+            set
+            {
+                Core.Core.SetBkColor(Handle, (int)value);
+            }
+            get
+            {
+                return (Color)Core.Core.GetTextColor(Handle);
+            }
+        }
 
         #endregion
 
@@ -24,7 +46,7 @@ namespace WinG
         public Button()
         {
             if (Settings.Settings.MainWin == IntPtr.Zero)
-                Settings.Settings.MainWin = Core.Core.CreateWindowEx2(Core.Core.WindowStylesEx.WS_EX_APPWINDOW, Application.RegisterClass(Core.Core.GenRandomString(5), Core.Core.GenRandomString(5)), string.Empty,Core.Core.WindowStyles.WS_OVERLAPPEDWINDOW,0,0,0,0,IntPtr.Zero,IntPtr.Zero,Process.GetCurrentProcess().Handle,IntPtr.Zero);
+                Settings.Settings.MainWin = Core.Core.CreateWindowEx2(Core.Core.WindowStylesEx.WS_EX_APPWINDOW, Application.RegisterClass(Core.Core.GenRandomString(5), Core.Core.GenRandomString(5)), string.Empty,Core.Core.WindowStyles.WS_OVERLAPPEDWINDOW,0,0,0,0,IntPtr.Zero,IntPtr.Zero, System.Diagnostics.Process.GetCurrentProcess().Handle,IntPtr.Zero);
             Handle = Core.Core.CreateWindowEx(Core.Core.WindowStylesEx.WS_EX_STATICEDGE, "Button", "", Core.Core.WindowStyles.WS_CHILD | Core.Core.WindowStyles.WS_VISIBLE | Core.Core.WindowStyles.BS_DEFPUSHBUTTON, 1, 1, 36, 29, Settings.Settings.MainWin, IntPtr.Zero, Settings.Settings.MainWin, IntPtr.Zero);
         }
     }

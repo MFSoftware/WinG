@@ -6,7 +6,7 @@ C:\Users\Nikita\source\repos\WinG\WinG\obj\Debug\WinG.dll
 C:\Users\Nikita\source\repos\WinG\WinG\obj\Debug\WinG.pdb
 C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\bin\Debug\WinG.dll
 C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\bin\Debug\WinG.pdb
-C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\obj\Debug\WinG.csprojAssemblyReference.cache
 C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\obj\Debug\WinG.csproj.CoreCompileInputs.cache
 C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\obj\Debug\WinG.dll
 C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\obj\Debug\WinG.pdb
+C:\Users\Nikita\Documents\GitHub\WinG\source\WinG\obj\Debug\WinG.csprojAssemblyReference.cache
