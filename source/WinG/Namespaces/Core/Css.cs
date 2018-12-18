@@ -30,7 +30,7 @@ namespace WinG.Core
                             case "W":
                                 Window ctrl = new Window();
                                 ctrl.Handle = hwnd;
-                                ctrl.BackColor = ColorLoader.FromName(arr[1].Remove(arr[1].Length - 1).Replace(" ", ""));
+                                //ctrl.BackColor = ColorLoader.FromName(arr[1].Remove(arr[1].Length - 1).Replace(" ", ""));
                                 break;
                             default:
 

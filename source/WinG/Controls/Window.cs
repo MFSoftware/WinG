@@ -16,6 +16,19 @@ namespace WinG
 
         public IntPtr Handle = IntPtr.Zero;
 
+        public int Transparency
+        {
+            set
+            {
+                WinG.Core.Core.SetWindowLong(this.Handle, -20, WinG.Core.Core.GetWindowLong(this.Handle, -20) | 524288);
+                WinG.Core.Core.SetLayeredWindowAttributes(this.Handle, 0U, Convert.ToByte((int)byte.MaxValue * value / 100), 2U);
+            }
+            get
+            {
+                return 0;
+            }
+        }
+
         public Control[] Controls
         {
             get
@@ -194,11 +207,6 @@ namespace WinG
         public void Add(Control ctrl)
         {
             Core.Core.SetParent(ctrl.Handle, Handle);
-        }
-
-        public void ToBack()
-        {
-            Core.Core.SetForegroundWindow(Handle);
         }
     }
 }

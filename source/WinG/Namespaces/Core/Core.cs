@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
@@ -7,6 +8,7 @@ using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using WinG.Drawing;
+using Point = WinG.Drawing.Point;
 
 namespace WinG.Core
 {
@@ -276,6 +278,20 @@ namespace WinG.Core
             ES_MULTILINE = 4
         }
 
+        public enum WindowLongFlags : int
+        {
+            GWL_EXSTYLE = -20,
+            GWLP_HINSTANCE = -6,
+            GWLP_HWNDPARENT = -8,
+            GWL_ID = -12,
+            GWL_STYLE = -16,
+            GWL_USERDATA = -21,
+            GWL_WNDPROC = -4,
+            DWLP_USER = 0x8,
+            DWLP_MSGRESULT = 0x0,
+            DWLP_DLGPROC = 0x4
+        }
+
         [Flags]
         public enum WindowStylesEx : uint
         {
@@ -378,62 +394,26 @@ namespace WinG.Core
         public enum WM : uint
         {
             NULL = 0x0000,
-            /// <summary>  
-            /// The WM_CREATE message is sent when an application requests that a window be created by calling the CreateWindowEx or CreateWindow function. (The message is sent before the function returns.) The window procedure of the new window receives this message after the window is created, but before the window becomes visible.  
-            /// </summary>  
-            CREATE = 0x0001,
-            /// <summary>  
-            /// The WM_DESTROY message is sent when a window is being destroyed. It is sent to the window procedure of the window being destroyed after the window is removed from the screen.   
-            /// This message is sent first to the window being destroyed and then to the child windows (if any) as they are destroyed. During the processing of the message, it can be assumed that all child windows still exist.  
-            /// /// </summary>  
-            DESTROY = 0x0002,
-            /// <summary>  
-            /// The WM_MOVE message is sent after a window has been moved.   
-            /// </summary>  
-            MOVE = 0x0003,
-            /// <summary>  
-            /// The WM_SIZE message is sent to a window after its size has changed.  
-            /// </summary>  
+            SETRANGE = USER + 1,
+            SETPOS = USER + 2,
+            SETSTEP = USER + 4,
+            GETPOS = USER + 8,
+            SETBARCOLOR = USER + 9,
+            GETSTEP = USER + 13,
+            SETBKCOLOR = 0x2000 + 1,
+            CREATE = 0x0001,  
+            DESTROY = 0x0002,  
+            MOVE = 0x0003,  
             SIZE = 0x0005,
-            /// <summary>  
-            /// The WM_ACTIVATE message is sent to both the window being activated and the window being deactivated. If the windows use the same input queue, the message is sent synchronously, first to the window procedure of the top-level window being deactivated, then to the window procedure of the top-level window being activated. If the windows use different input queues, the message is sent asynchronously, so the window is activated immediately.   
-            /// </summary>  
             ACTIVATE = 0x0006,
-            /// <summary>  
-            /// The WM_SETFOCUS message is sent to a window after it has gained the keyboard focus.   
-            /// </summary>  
             SETFOCUS = 0x0007,
-            /// <summary>  
-            /// The WM_KILLFOCUS message is sent to a window immediately before it loses the keyboard focus.   
-            /// </summary>  
-            KILLFOCUS = 0x0008,
-            /// <summary>  
-            /// The WM_ENABLE message is sent when an application changes the enabled state of a window. It is sent to the window whose enabled state is changing. This message is sent before the EnableWindow function returns, but after the enabled state (WS_DISABLED style bit) of the window has changed.   
-            /// </summary>  
+            KILLFOCUS = 0x0008,  
             ENABLE = 0x000A,
-            /// <summary>  
-            /// An application sends the WM_SETREDRAW message to a window to allow changes in that window to be redrawn or to prevent changes in that window from being redrawn.   
-            /// </summary>  
-            SETREDRAW = 0x000B,
-            /// <summary>  
-            /// An application sends a WM_SETTEXT message to set the text of a window.   
-            /// </summary>  
+            SETREDRAW = 0x000B, 
             SETTEXT = 0x000C,
-            /// <summary>  
-            /// An application sends a WM_GETTEXT message to copy the text that corresponds to a window into a buffer provided by the caller.   
-            /// </summary>  
             GETTEXT = 0x000D,
-            /// <summary>  
-            /// An application sends a WM_GETTEXTLENGTH message to determine the length, in characters, of the text associated with a window.   
-            /// </summary>  
             GETTEXTLENGTH = 0x000E,
-            /// <summary>  
-            /// The WM_PAINT message is sent when the system or another application makes a request to paint a portion of an application's window. The message is sent when the UpdateWindow or RedrawWindow function is called, or by the DispatchMessage function when the application obtains a WM_PAINT message by using the GetMessage or PeekMessage function.   
-            /// </summary>  
             PAINT = 0x000F,
-            /// <summary>  
-            /// The WM_CLOSE message is sent as a signal that a window or an application should terminate.  
-            /// </summary>  
             CLOSE = 0x0010,
             /// <summary>  
             /// The WM_QUERYENDSESSION message is sent when the user chooses to end the session or when an application calls one of the system shutdown functions. If any application returns zero, the session is not ended. The system stops sending WM_QUERYENDSESSION messages as soon as one application returns zero.  
@@ -1129,6 +1109,12 @@ namespace WinG.Core
         [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
         public static extern IntPtr FindWindowByCaption(IntPtr ZeroOnly, string lpWindowName);
 
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr LoadAcceleratorsW(IntPtr hInstance, int lpWindowName);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern bool TranslateAccelerator(IntPtr hWnd, IntPtr hAcess, ref MSG msg);
+
         [DllImport("gdi32.dll")]
         public static extern bool BitBlt(IntPtr hObject, int nXDest, int nYDest, int nWidth,
         int nHeight, IntPtr hObjSource, int nXSrc, int nYSrc, TernaryRasterOperations dwRop);
@@ -1177,7 +1163,7 @@ namespace WinG.Core
         public static extern int SetClassLongA(int hwnd, int nIndex, int dwNewLong);
 
         [DllImport("user32.dll")]
-        public static extern void SendMessage(IntPtr hwnd, WM m, int wp, int lp);
+        public static extern int SendMessage(IntPtr hwnd, WM m, int wParam, int lParam);
 
         [DllImport("gdi32.dll")]
         public static extern IntPtr CreateFont(int nHeight, int nWidth, int nEscapement,
@@ -1414,6 +1400,11 @@ namespace WinG.Core
             }
         }
 
+        public static int MakeCOLORREF(byte r, byte g, byte b)
+        {
+            return (int)(((uint)r) | (((uint)g) << 8) | (((uint)b) << 16));
+        }
+
         [DllImport("kernel32.dll")]
         public static extern IntPtr GetProcAddress(IntPtr hModule, string procedureName);
 
@@ -1437,5 +1428,11 @@ namespace WinG.Core
 
         [DllImport("user32.dll")]
         public static extern uint GetWindowThreadProcessId(IntPtr hWnd, IntPtr ProcessId);
+
+        [DllImport("user32.dll")]
+        public static extern bool SetLayeredWindowAttributes(IntPtr hwnd, uint crKey, byte bAlpha, uint dwFlags);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern bool GetLayeredWindowAttributes(IntPtr hwnd, uint crKey, byte bAlpha, uint dwFlags);
     }
 }

@@ -31,8 +31,11 @@ namespace WinG
 
             while ((hasMessage = Core.Core.GetMessage(out msg, IntPtr.Zero, 0, 0)) != 0 && hasMessage != -1)
             {
-                Core.Core.TranslateMessage(ref msg);
-                Core.Core.DispatchMessage(ref msg);
+                if (!Core.Core.TranslateAccelerator(msg.hwnd, Core.Core.LoadAcceleratorsW(System.Diagnostics.Process.GetCurrentProcess().Handle, 109), ref msg))
+                {
+                    Core.Core.TranslateMessage(ref msg);
+                    Core.Core.DispatchMessage(ref msg);
+                }
             }
         }
 
