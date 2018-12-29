@@ -12,6 +12,38 @@ namespace WinG
     {
         #region Properties
 
+        public Font Font
+        {
+            set
+            {
+                Core.Core.SendMessage(Handle, Core.Core.WM.SETFONT, value.Handle.ToInt32(), 0);
+            }
+        }
+
+        public CursorStyle Cursor
+        {
+            set
+            {
+                Core.Core.SetCursor(Core.Core.LoadCursor(Handle, value));
+            }
+        }
+
+        public string Text
+        {
+            set
+            {
+                Core.Core.SetWindowText(Handle, value);
+            }
+            get
+            {
+                StringBuilder Buff = new StringBuilder(256);
+                if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
+                    return Buff.ToString();
+
+                return null;
+            }
+        }
+
         public Color FontColor
         {
             set
@@ -33,6 +65,14 @@ namespace WinG
             get
             {
                 return (Color)Core.Core.GetTextColor(Handle);
+            }
+        }
+
+        public Css Css
+        {
+            set
+            {
+                //Css.LoadStyleString("");
             }
         }
 

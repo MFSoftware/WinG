@@ -7,29 +7,8 @@ using WinG.Drawing;
 
 namespace WinG
 {
-    public class Control
+    public class Control : Object
     {
-        public IntPtr Handle = IntPtr.Zero;
-
-        public Font Font
-        {
-            set
-            {
-                Core.Core.SendMessage(Handle, Core.Core.WM.SETFONT, value.Handle.ToInt32(), 0);
-            }
-        }
-
-        public string Class
-        {
-            get
-            {
-                StringBuilder Buff = new StringBuilder(256);
-                if (Core.Core.GetClassName(Handle, Buff, 256) > 0)
-                    return Buff.ToString();
-                return null;
-            }
-        }
-
         public int Width
         {
             set
@@ -43,6 +22,18 @@ namespace WinG
                 Rect r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.Width;
+            }
+        }
+
+        public bool Enabled
+        {
+            set
+            {
+                Core.Core.EnableWindow(Handle, value);
+            }
+            get
+            {
+                return Core.Core.IsWindowEnabled(Handle);
             }
         }
 
@@ -82,26 +73,6 @@ namespace WinG
             }
         }
 
-        public string Name
-        {
-            get
-            {
-                return string.Empty;
-            }
-        }
-
-        public bool Enabled
-        {
-            set
-            {
-                Core.Core.EnableWindow(Handle, value);
-            }
-            get
-            {
-                return Core.Core.IsWindowEnabled(Handle);
-            }
-        }
-
         public IntPtr Parent
         {
             set
@@ -111,22 +82,6 @@ namespace WinG
             get
             {
                 return Core.Core.GetParent(Handle);
-            }
-        }
-
-        public string Text
-        {
-            set
-            {
-                Core.Core.SetWindowText(Handle, value);
-            }
-            get
-            {
-                StringBuilder Buff = new StringBuilder(256);
-                if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
-                    return Buff.ToString();
-
-                return null;
             }
         }
 
@@ -165,7 +120,6 @@ namespace WinG
         public void Free()
         {
             Core.Core.DestroyWindow(Handle);
-            Core.Core.ZeroMemory(this);
             Handle = IntPtr.Zero;
         }
 

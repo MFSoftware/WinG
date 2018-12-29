@@ -16,12 +16,23 @@ namespace WinG
 
         public IntPtr Handle = IntPtr.Zero;
 
+        public Css Css
+        {
+            set
+            {
+                foreach (string line in value.Text.Split('\n'))
+                {
+                    Core.Core.ParseCssLine(line, Handle);
+                }
+            }
+        }
+
         public int Transparency
         {
             set
             {
-                WinG.Core.Core.SetWindowLong(this.Handle, -20, WinG.Core.Core.GetWindowLong(this.Handle, -20) | 524288);
-                WinG.Core.Core.SetLayeredWindowAttributes(this.Handle, 0U, Convert.ToByte((int)byte.MaxValue * value / 100), 2U);
+                WinG.Core.Core.SetWindowLong(Handle, -20, WinG.Core.Core.GetWindowLong(this.Handle, -20) | 524288);
+                WinG.Core.Core.SetLayeredWindowAttributes(Handle, 0U, Convert.ToByte((int)byte.MaxValue * value / 100), 2U);
             }
             get
             {
@@ -33,17 +44,18 @@ namespace WinG
         {
             get
             {
-                IntPtr[] child = new IntPtr[15];
-                List<Control> forRet = new List<Control>();
-                child[0] = Core.Core.GetWindow(Handle, 5);
+                IntPtr[] handles = new IntPtr[15];
+                Control[] ctrls = new Control[15];
+                handles[0] = Core.Core.GetWindow(Handle, Core.Core.GetWindowCmd.GW_CHILD);
 
                 for (int i = 1; i <= 5; i++)
                 {
+                    handles[i] = Core.Core.GetWindow(handles[i - 1], Core.Core.GetWindowCmd.GW_HWNDNEXT);
                     Control c = new Control();
-                    c.Handle = Core.Core.GetWindow(child[i - 1], 2);
-                    forRet.Add(c);
+                    c.Handle = handles[i - 1];
+                    ctrls[i - 1] = c;
                 }
-                return forRet.ToArray();
+                return ctrls;
             }
         }
 
@@ -101,10 +113,18 @@ namespace WinG
             get
             {
                 StringBuilder Buff = new StringBuilder(256);
-                if (Core.Core.GetClassName(Handle, Buff, 256) > 0)
+                if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
                     return Buff.ToString();
 
                 return null;
+            }
+        }
+
+        public int BorderRadius
+        {
+            set
+            {
+                Core.Core.SetWindowRgn(Handle, Core.Core.CreateRoundRectRgn(0, 0, Width, Height, value, value), true);
             }
         }
 

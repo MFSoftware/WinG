@@ -16,6 +16,28 @@ namespace WinG.Core
     {
         #region Classes
 
+        public enum GetWindowCmd : uint
+        {
+            GW_HWNDFIRST = 0,
+            GW_HWNDLAST = 1,
+            GW_HWNDNEXT = 2,
+            GW_HWNDPREV = 3,
+            GW_OWNER = 4,
+            GW_CHILD = 5,
+            GW_ENABLEDPOPUP = 6
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct NativeMessage
+        {
+            public IntPtr handle;
+            public uint msg;
+            public IntPtr wParam;
+            public IntPtr lParam;
+            public uint time;
+            public System.Drawing.Point p;
+        }
+
         [Flags]
         public enum WINDOWS_STATION_ACCESS_MASK : uint
         {
@@ -1326,11 +1348,21 @@ namespace WinG.Core
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool MessageBeep(MessageType uType);
 
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool PeekMessage(ref MSG lpMsg, int hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg);
+
         [DllImport("user32.dll", EntryPoint = "SetWindowPos")]
         public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int wFlags);
 
         [DllImport("user32.dll")]
         public static extern IntPtr LoadCursor(IntPtr hInstance, CursorStyle lpCursorName);
+
+        [DllImport("user32")]
+        public static extern bool IsWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr SetCursor(IntPtr hInstance);
 
         [DllImport("user32.dll")]
         public static extern short RegisterClassEx([In] ref WNDCLASSEX lpwcx);
@@ -1369,37 +1401,6 @@ namespace WinG.Core
         [DllImport("kernel32.dll")]
         public static extern IntPtr LoadLibrary(string dllToLoad);
 
-
-        [DllImport("coredll.dll", EntryPoint = "memset", SetLastError = false)]
-        private static extern void memset(IntPtr dest, int c, int size);
-
-        public static bool ZeroMemory(object o)
-        {
-            try
-            {
-                GCHandle gc = GCHandle.Alloc(o, GCHandleType.Pinned);
-                memset(gc.AddrOfPinnedObject(), 0, Marshal.SizeOf(o));
-                gc.Free();
-                return true;
-            }
-            catch (ArgumentException)
-            {
-                return false;
-            }
-            catch (InvalidOperationException)
-            {
-                return false;
-            }
-            catch (NotImplementedException)
-            {
-                return false;
-            }
-            catch (NotSupportedException)
-            {
-                return false;
-            }
-        }
-
         public static int MakeCOLORREF(byte r, byte g, byte b)
         {
             return (int)(((uint)r) | (((uint)g) << 8) | (((uint)b) << 16));
@@ -1424,15 +1425,31 @@ namespace WinG.Core
         public static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
 
         [DllImport("user32.dll", SetLastError = true)]
-        public static extern IntPtr GetWindow(IntPtr HWnd, uint cmd);
+        public static extern IntPtr GetWindow(IntPtr HWnd, GetWindowCmd cmd);
 
         [DllImport("user32.dll")]
         public static extern uint GetWindowThreadProcessId(IntPtr hWnd, IntPtr ProcessId);
+
+        [DllImport("user32.dll")]
+        public static extern int SetWindowRgn(IntPtr hWnd, IntPtr hRgn, bool bRedraw);
+
+        [DllImport("gdi32.dll")]
+        public static extern IntPtr CreateRoundRectRgn(int x1, int y1, int x2, int y2, int cx, int cy);
 
         [DllImport("user32.dll")]
         public static extern bool SetLayeredWindowAttributes(IntPtr hwnd, uint crKey, byte bAlpha, uint dwFlags);
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern bool GetLayeredWindowAttributes(IntPtr hwnd, uint crKey, byte bAlpha, uint dwFlags);
+
+        public static void ParseCssLine(string line, IntPtr hwnd)
+        {
+            StringBuilder Buff = new StringBuilder(256);
+            if (Core.GetClassName(hwnd, Buff, 256) > 0) { string type = Buff.ToString(); }
+            //int counter = 1;
+
+            string[] arr = line.Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
+            
+        }
     }
 }

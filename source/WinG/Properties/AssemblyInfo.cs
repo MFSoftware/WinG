@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("WinG")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Windows GUI library, based on WinAPI")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MFSoftware")]
 [assembly: AssemblyProduct("WinG")]

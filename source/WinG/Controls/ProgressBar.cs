@@ -21,6 +21,18 @@ namespace WinG
             }
         }
 
+        public bool Enabled
+        {
+            set
+            {
+                Core.Core.EnableWindow(Handle, value);
+            }
+            get
+            {
+                return Core.Core.IsWindowEnabled(Handle);
+            }
+        }
+
         public int Step
         {
             set

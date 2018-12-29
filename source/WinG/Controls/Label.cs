@@ -11,7 +11,41 @@ namespace WinG
     {
         #region Properties
 
+        public string Text
+        {
+            set
+            {
+                Core.Core.SetWindowText(Handle, value);
+            }
+            get
+            {
+                StringBuilder Buff = new StringBuilder(256);
+                if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
+                    return Buff.ToString();
 
+                return null;
+            }
+        }
+
+        public bool Enabled
+        {
+            set
+            {
+                Core.Core.EnableWindow(Handle, value);
+            }
+            get
+            {
+                return Core.Core.IsWindowEnabled(Handle);
+            }
+        }
+
+        public Font Font
+        {
+            set
+            {
+                Core.Core.SendMessage(Handle, Core.Core.WM.SETFONT, value.Handle.ToInt32(), 0);
+            }
+        }
 
         #endregion
 
