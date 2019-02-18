@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinG.Controls
+namespace WinG
 {
-    class Link
+    public class Link : Control
     {
     }
 }

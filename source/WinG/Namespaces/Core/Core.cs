@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using System.Text;
-using System.Threading.Tasks;
 using WinG.Drawing;
 using Point = WinG.Drawing.Point;
 
@@ -1013,46 +1008,16 @@ namespace WinG.Core
             WTSSESSION_CHANGE = 0x02B1,
             TABLET_FIRST = 0x02c0,
             TABLET_LAST = 0x02df,
-            CUT = 0x0300,
-            /// <summary>  
-            /// An application sends the WM_COPY message to an edit control or combo box to copy the current selection to the clipboard in CF_TEXT format.   
-            /// </summary>  
+            CUT = 0x0300, 
             COPY = 0x0301,
-            /// <summary>  
-            /// An application sends a WM_PASTE message to an edit control or combo box to copy the current content of the clipboard to the edit control at the current caret position. Data is inserted only if the clipboard contains data in CF_TEXT format.   
-            /// </summary>  
             PASTE = 0x0302,
-            /// <summary>  
-            /// An application sends a WM_CLEAR message to an edit control or combo box to delete (clear) the current selection, if any, from the edit control.   
-            /// </summary>  
-            CLEAR = 0x0303,
-            /// <summary>  
-            /// An application sends a WM_UNDO message to an edit control to undo the last operation. When this message is sent to an edit control, the previously deleted text is restored or the previously added text is deleted.  
-            /// </summary>  
-            UNDO = 0x0304,
-            /// <summary>  
-            /// The WM_RENDERFORMAT message is sent to the clipboard owner if it has delayed rendering a specific clipboard format and if an application has requested data in that format. The clipboard owner must render data in the specified format and place it on the clipboard by calling the SetClipboardData function.   
-            /// </summary>  
-            RENDERFORMAT = 0x0305,
-            /// <summary>  
-            /// The WM_RENDERALLFORMATS message is sent to the clipboard owner before it is destroyed, if the clipboard owner has delayed rendering one or more clipboard formats. For the content of the clipboard to remain available to other applications, the clipboard owner must render data in all the formats it is capable of generating, and place the data on the clipboard by calling the SetClipboardData function.   
-            /// </summary>  
-            RENDERALLFORMATS = 0x0306,
-            /// <summary>  
-            /// The WM_DESTROYCLIPBOARD message is sent to the clipboard owner when a call to the EmptyClipboard function empties the clipboard.   
-            /// </summary>  
-            DESTROYCLIPBOARD = 0x0307,
-            /// <summary>  
-            /// The WM_DRAWCLIPBOARD message is sent to the first window in the clipboard viewer chain when the content of the clipboard changes. This enables a clipboard viewer window to display the new content of the clipboard.   
-            /// </summary>  
+            CLEAR = 0x0303, 
+            UNDO = 0x0304, 
+            RENDERFORMAT = 0x0305, 
+            RENDERALLFORMATS = 0x0306,  
+            DESTROYCLIPBOARD = 0x0307, 
             DRAWCLIPBOARD = 0x0308,
-            /// <summary>  
-            /// The WM_PAINTCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in the CF_OWNERDISPLAY format and the clipboard viewer's client area needs repainting.   
-            /// </summary>  
             PAINTCLIPBOARD = 0x0309,
-            /// <summary>  
-            /// The WM_VSCROLLCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in the CF_OWNERDISPLAY format and an event occurs in the clipboard viewer's vertical scroll bar. The owner should scroll the clipboard image and update the scroll bar values.   
-            /// </summary>  
             VSCROLLCLIPBOARD = 0x030A,  
             SIZECLIPBOARD = 0x030B,
             ASKCBFORMATNAME = 0x030C, 
@@ -1171,6 +1136,12 @@ namespace WinG.Core
 
         [DllImport("kernel32.dll")]
         public static extern void FatalExit(int ExitCode);
+
+        [DllImport("user32.dll")]
+        public static extern void CheckDlgButton(IntPtr HWnd, int idButton, int word);
+
+        [DllImport("user32.dll")]
+        public static extern int IsDlgButtonChecked(IntPtr hDlg, int nIdButton);
 
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern uint GetProcessIdOfThread(IntPtr handle);
@@ -1355,8 +1326,8 @@ namespace WinG.Core
         [DllImport("user32.dll", EntryPoint = "SetWindowPos")]
         public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int wFlags);
 
-        [DllImport("user32.dll")]
-        public static extern IntPtr LoadCursor(IntPtr hInstance, CursorStyle lpCursorName);
+        //[DllImport("user32.dll")]
+        //public static extern IntPtr LoadCursor(IntPtr hInstance, CursorStyle lpCursorName);
 
         [DllImport("user32")]
         public static extern bool IsWindow(IntPtr hWnd);

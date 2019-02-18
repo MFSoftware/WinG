@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WinG.Drawing;
 
 namespace WinG
@@ -27,14 +23,8 @@ namespace WinG
 
         public bool Enabled
         {
-            set
-            {
-                Core.Core.EnableWindow(Handle, value);
-            }
-            get
-            {
-                return Core.Core.IsWindowEnabled(Handle);
-            }
+            set => Core.Core.EnableWindow(Handle, value);
+            get => Core.Core.IsWindowEnabled(Handle);
         }
 
         public int Height
@@ -67,22 +57,13 @@ namespace WinG
                         break;
                 }
             }
-            get
-            {
-                return Core.Core.IsWindowVisible(Handle);
-            }
+            get => Core.Core.IsWindowVisible(Handle);
         }
 
         public IntPtr Parent
         {
-            set
-            {
-                Core.Core.SetParent(Handle, value);
-            }
-            get
-            {
-                return Core.Core.GetParent(Handle);
-            }
+            set => Core.Core.SetParent(Handle, value);
+            get => Core.Core.GetParent(Handle);
         }
 
         public int Left

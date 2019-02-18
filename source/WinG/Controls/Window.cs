@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using WinG.Drawing;
 
 namespace WinG
@@ -14,7 +9,7 @@ namespace WinG
     {
         #region Properties
 
-        public IntPtr Handle = IntPtr.Zero;
+        public IntPtr Handle { get; set; }
 
         public Css Css
         {
@@ -31,13 +26,10 @@ namespace WinG
         {
             set
             {
-                WinG.Core.Core.SetWindowLong(Handle, -20, WinG.Core.Core.GetWindowLong(this.Handle, -20) | 524288);
-                WinG.Core.Core.SetLayeredWindowAttributes(Handle, 0U, Convert.ToByte((int)byte.MaxValue * value / 100), 2U);
+                Core.Core.SetWindowLong(Handle, -20, WinG.Core.Core.GetWindowLong(this.Handle, -20) | 524288);
+                Core.Core.SetLayeredWindowAttributes(Handle, 0U, Convert.ToByte((int)byte.MaxValue * value / 100), 2U);
             }
-            get
-            {
-                return 0;
-            }
+            get => 0;
         }
 
         public Control[] Controls
@@ -73,10 +65,7 @@ namespace WinG
 
         public CursorStyle Cursor
         {
-            get
-            {
-                return (CursorStyle) Core.Core.GetClassLong(Handle, -12);
-            }
+            get => (CursorStyle) Core.Core.GetClassLong(Handle, -12);
             set
             {
                 //Core.Core.SetClassLongA(Handle.ToInt32(), -12, Core.Core.LoadCursor(Handle, value).ToInt32());
@@ -86,46 +75,28 @@ namespace WinG
 
         public Color BackColor
         {
-            get
-            {
-                return (Color) Core.Core.GetClassLong(Handle, -10);
-            }
-            set
-            {
-                Core.Core.SetClassLongA(Handle.ToInt32(), -10, (int) value);
-            }
+            get => (Color) Core.Core.GetClassLong(Handle, -10);
+            set => Core.Core.SetClassLongA(Handle.ToInt32(), -10, (int) value);
         }
 
         public Icon Icon
         {
-            set
-            {
-                Core.Core.SetClassLongA(Handle.ToInt32(), -14, value.Handle.ToInt32());
-            }
+            set => Core.Core.SetClassLongA(Handle.ToInt32(), -14, value.Handle.ToInt32());
         }
 
         public string Text
         {
-            set
-            {
-                Core.Core.SetWindowText(Handle, value);
-            }
+            set => Core.Core.SetWindowText(Handle, value);
             get
             {
-                StringBuilder Buff = new StringBuilder(256);
-                if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
-                    return Buff.ToString();
-
-                return null;
+                StringBuilder buff = new StringBuilder(256);
+                return Core.Core.GetWindowText(Handle, buff, 256) > 0 ? buff.ToString() : null;
             }
         }
 
         public int BorderRadius
         {
-            set
-            {
-                Core.Core.SetWindowRgn(Handle, Core.Core.CreateRoundRectRgn(0, 0, Width, Height, value, value), true);
-            }
+            set => Core.Core.SetWindowRgn(Handle, Core.Core.CreateRoundRectRgn(0, 0, Width, Height, value, value), true);
         }
 
         public int Width
@@ -175,7 +146,7 @@ namespace WinG
                 300,
                 IntPtr.Zero,
                 IntPtr.Zero,
-                System.Diagnostics.Process.GetCurrentProcess().Handle,
+                Process.GetCurrentProcess().Handle,
                 IntPtr.Zero);
         }
 
@@ -192,7 +163,7 @@ namespace WinG
                 300,
                 IntPtr.Zero,
                 IntPtr.Zero,
-                System.Diagnostics.Process.GetCurrentProcess().Handle,
+                Process.GetCurrentProcess().Handle,
                 IntPtr.Zero);
         }
 

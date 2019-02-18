@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace WinG
 {
@@ -13,29 +9,11 @@ namespace WinG
 
         public string Text
         {
-            set
-            {
-                Core.Core.SetWindowText(Handle, value);
-            }
+            set => Core.Core.SetWindowText(Handle, value);
             get
             {
-                StringBuilder Buff = new StringBuilder(256);
-                if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
-                    return Buff.ToString();
-
-                return null;
-            }
-        }
-
-        public bool Enabled
-        {
-            set
-            {
-                Core.Core.EnableWindow(Handle, value);
-            }
-            get
-            {
-                return Core.Core.IsWindowEnabled(Handle);
+                StringBuilder buff = new StringBuilder(256);
+                return Core.Core.GetWindowText(Handle, buff, 256) > 0 ? buff.ToString() : null;
             }
         }
 

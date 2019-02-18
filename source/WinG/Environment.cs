@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace WinG
 {
@@ -13,11 +11,8 @@ namespace WinG
             uint nBufferLength = Core.Core.GetCurrentDirectory(0, null);
             var lpBuffer = new StringBuilder((int)nBufferLength);
 
-            uint result = Core.Core.GetCurrentDirectory(nBufferLength, lpBuffer);
-            if (result == 0)
-            {
-                //WinError.ThrowLastWin32Error();
-            }
+            if (Core.Core.GetCurrentDirectory(nBufferLength, lpBuffer) == 0)
+                throw new Win32Exception(Marshal.GetLastWin32Error());
 
             return lpBuffer.ToString();
         }

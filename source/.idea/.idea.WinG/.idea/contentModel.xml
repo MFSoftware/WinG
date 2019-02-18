@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Nikita\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Nikita\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_WinG.-562869017.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Nikita\Documents\GitHub\WinG\source" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="WinG" t="IncludeRecursive">
+        <e p="Application.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Clipboard.cs" t="Include" />
+        <e p="Controls" t="Include">
+          <e p="Base" t="Include">
+            <e p="Control.cs" t="Include" />
+            <e p="Object.cs" t="Include" />
+          </e>
+          <e p="Button.cs" t="Include" />
+          <e p="CheckBox.cs" t="Include" />
+          <e p="Classes" t="Include">
+            <e p="Font.cs" t="Include" />
+            <e p="Icon.cs" t="Include" />
+          </e>
+          <e p="ComboBox.cs" t="Include" />
+          <e p="Edit.cs" t="Include" />
+          <e p="GroupBox.cs" t="Include" />
+          <e p="Image.cs" t="Include" />
+          <e p="Label.cs" t="Include" />
+          <e p="Link.cs" t="Include" />
+          <e p="ListBox.cs" t="Include" />
+          <e p="ListView.cs" t="Include" />
+          <e p="Memo.cs" t="Include" />
+          <e p="ProgressBar.cs" t="Include" />
+          <e p="RichEdit.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
+          <e p="Window.cs" t="Include" />
+        </e>
+        <e p="Desktop.cs" t="Include" />
+        <e p="Environment.cs" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="Message.cs" t="Include" />
+        <e p="MessageBox.cs" t="Include" />
+        <e p="Namespaces" t="Include">
+          <e p="Core" t="Include">
+            <e p="Core.cs" t="Include" />
+            <e p="Css.cs" t="Include" />
+            <e p="Settings.cs" t="Include" />
+          </e>
+          <e p="Diagnostics" t="Include">
+            <e p="Process.cs" t="Include" />
+          </e>
+          <e p="Drawing" t="Include">
+            <e p="Point.cs" t="Include" />
+            <e p="Rect.cs" t="Include" />
+          </e>
+          <e p="IO" t="Include">
+            <e p="Directory.cs" t="Include" />
+            <e p="File.cs" t="Include" />
+          </e>
+          <e p="Keyboard" t="Include">
+            <e p="Keyboard.cs" t="Include" />
+          </e>
+          <e p="OsInfo" t="Include">
+            <e p="OsInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="WinG.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WinG.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Nikita\source\repos\ConsoleApp2\ConsoleApp2" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Test.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
