@@ -9,13 +9,13 @@ namespace WinG
         {
             set
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 Core.Core.SetWindowPos(Handle, 0, 0, 0, value, r.Height, Core.Core.SWP.NOMOVE);
             }
             get
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.Width;
             }
@@ -31,13 +31,13 @@ namespace WinG
         {
             set
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 Core.Core.SetWindowPos(Handle, 0, 0, 0, r.Width, value, Core.Core.SWP.NOMOVE);
             }
             get
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.Height;
             }
@@ -70,13 +70,13 @@ namespace WinG
         {
             get
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.X;
             }
             set
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 Core.Core.MoveWindow(Handle, value, r.Y, r.Width, r.Height, false);
             }
@@ -86,13 +86,13 @@ namespace WinG
         {
             get
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.Y;
             }
             set
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 Core.Core.MoveWindow(Handle, r.X, value, r.Width, r.Height, false);
             }

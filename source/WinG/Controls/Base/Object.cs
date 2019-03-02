@@ -12,7 +12,7 @@ namespace WinG
         {
             get
             {
-                StringBuilder buff = new StringBuilder(256);
+                var buff = new StringBuilder(256);
                 return Core.Core.GetClassName(Handle, buff, 256) > 0 ? buff.ToString() : null;
             }
         }

@@ -20,12 +20,12 @@ namespace WinG.OsInfo
 
         public OsInfo()
         {
-            StringBuilder name = new StringBuilder(260);
+            var name = new StringBuilder(260);
             uint size = 260;
             Core.Core.GetComputerNameEx(Core.Core.COMPUTER_NAME_FORMAT.ComputerNameDnsHostname, name, ref size);
             ComputerName = name.ToString();
 
-            Core.Core.OSVERSIONINFOEX osvi = new Core.Core.OSVERSIONINFOEX();
+            var osvi = new Core.Core.OSVERSIONINFOEX();
             GetVersionEx(ref osvi);
             Product = osvi.wProductType.ToString();
         }

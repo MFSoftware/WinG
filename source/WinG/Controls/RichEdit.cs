@@ -19,7 +19,7 @@ namespace WinG
             }
             get
             {
-                StringBuilder Buff = new StringBuilder(256);
+                var Buff = new StringBuilder(256);
                 if (Core.Core.GetWindowText(Handle, Buff, 256) > 0)
                     return Buff.ToString();
 

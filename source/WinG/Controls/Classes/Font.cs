@@ -10,11 +10,27 @@ namespace WinG
     {
         public IntPtr Handle;
 
-        public string Family = "System";
-        public int Size = 4;
+        public string Family { get; set; } = "System";
 
-        public bool Italic = false;
-        public bool Underline = false;
+        public Font()
+        {
+            Size = 4;
+        }
+
+        public int Size { get; set; }
+
+        public bool Italic { get; set; }
+        public bool Underline { get; set; }
+
+        public static void Add(string filename)
+        {
+            Core.Core.AddFontResource(filename);
+        }
+        
+        public static void Remove(string filename)
+        {
+            Core.Core.RemoveFontResource(filename);
+        }
 
         public void Save()
         {

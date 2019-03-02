@@ -8,7 +8,7 @@ namespace WinG
     {
         public static string GetCurrentDirectory()
         {
-            uint nBufferLength = Core.Core.GetCurrentDirectory(0, null);
+            var nBufferLength = Core.Core.GetCurrentDirectory(0, null);
             var lpBuffer = new StringBuilder((int)nBufferLength);
 
             if (Core.Core.GetCurrentDirectory(nBufferLength, lpBuffer) == 0)

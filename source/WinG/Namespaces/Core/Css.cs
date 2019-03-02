@@ -14,30 +14,30 @@ namespace WinG
 
         public static Css LoadStyleString(string test)
         {
-            Css style = new Css();
+            var style = new Css();
             style.Text = test;
             return style;
         }
 
         public static void LoadStyleFile(IntPtr hwnd, string name)
         {
-            StringBuilder Buff = new StringBuilder(256);
+            var Buff = new StringBuilder(256);
             if (Core.Core.GetClassName(hwnd, Buff, 256) > 0)
                 type = Buff.ToString();
-            int counter = 1;
+            var counter = 1;
 
             string line;
-            StreamReader file = new StreamReader(name);
+            var file = new StreamReader(name);
             while ((line = file.ReadLine()) != null)
             {
-                string[] arr = line.Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
+                var arr = line.Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
                 switch (arr[0].ToLower())
                 {
                     case "background-color":
                         switch (type)
                         {
                             case "W":
-                                Window ctrl = new Window();
+                                var ctrl = new Window();
                                 ctrl.Handle = hwnd;
                                 if (!arr[1].Replace(" ", "").StartsWith("#"))
                                 {
@@ -58,7 +58,7 @@ namespace WinG
                         switch (type)
                         {
                             case "W":
-                                Window ctrl = new Window();
+                                var ctrl = new Window();
                                 ctrl.Handle = hwnd;
                                 if (arr[1].EndsWith("px;"))
                                 {
@@ -74,12 +74,12 @@ namespace WinG
                         switch (type)
                         {
                             case "Button":
-                                Control ctrl = new Control();
+                                var ctrl = new Control();
                                 ctrl.Handle = hwnd;
 
                                 if (Core.Core.IsWindow(ctrl.Parent))
                                 {
-                                    Window win = new Window();
+                                    var win = new Window();
                                     win.Handle = ctrl.Parent;
                                     if (arr[1].EndsWith("px;"))
                                         ctrl.Left = Int32.Parse(arr[1].Remove(arr[1].Length - 3).Replace(" ", ""));
@@ -94,11 +94,11 @@ namespace WinG
                         {
                             case "Button":
                             case "Static":
-                                Control c = new Control();
+                                var c = new Control();
                                 c.Handle = hwnd;
                                 if (Core.Core.IsWindow(c.Parent))
                                 {
-                                    Window win = new Window();
+                                    var win = new Window();
                                     win.Handle = c.Parent;
                                     if (arr[1].EndsWith("px;"))
                                         c.Top = Int32.Parse(arr[1].Remove(arr[1].Length - 3).Replace(" ", ""));
@@ -115,12 +115,12 @@ namespace WinG
                         switch (type)
                         {
                             case "Button":
-                                Button btn = new Button();
+                                var btn = new Button();
                                 btn.Handle = hwnd;
                                 //ctrl.BackColor = ColorLoader.FromName(arr[1].Remove(arr[1].Length - 1).Replace(" ", ""));
                                 break;
                             case "Label":
-                                Label label = new Label();
+                                var label = new Label();
                                 label.Handle = hwnd;
                                 //ctrl.BackColor = ColorLoader.FromName(arr[1].Remove(arr[1].Length - 1).Replace(" ", ""));
                                 break;
@@ -132,12 +132,12 @@ namespace WinG
                         switch (type)
                         {
                             case "Button":
-                                Button btnff = new Button();
+                                var btnff = new Button();
                                 btnff.Handle = hwnd;
                                 //ctrl.BackColor = ColorLoader.FromName(arr[1].Remove(arr[1].Length - 1).Replace(" ", ""));
                                 break;
                             case "Label":
-                                Label label = new Label();
+                                var label = new Label();
                                 label.Handle = hwnd;
                                 //ctrl.BackColor = ColorLoader.FromName(arr[1].Remove(arr[1].Length - 1).Replace(" ", ""));
                                 break;

@@ -10,7 +10,7 @@ namespace WinG.IO
     {
         public static void Copy(string oldFile, string newFile)
         {
-            int pbCancel = 0;
+            var pbCancel = 0;
             Core.Core.CopyFileEx(oldFile, newFile, new Core.Core.CopyProgressRoutine(CopyProgressHandler), IntPtr.Zero, ref pbCancel, Core.Core.CopyFileFlags.COPY_FILE_RESTARTABLE);
         }
 

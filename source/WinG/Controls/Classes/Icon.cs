@@ -16,17 +16,22 @@ namespace WinG
         {
             Handle = Core.Core.ExtractIcon(IntPtr.Zero, filename, 0);
         }
+        
+        public void LoadFromSystemIcon(SystemIcons id)
+        {
+            Handle = Core.Core.LoadIcon(IntPtr.Zero, (int) id);
+        }
 
         public static Icon FromFile(string filename)
         {
-            Icon ico = new Icon();
-            ico.Handle = Core.Core.ExtractIcon(IntPtr.Zero, filename, 0);
+            var ico = new Icon {Handle = Core.Core.ExtractIcon(IntPtr.Zero, filename, 0)};
             return ico;
         }
 
-        public void LoadFromSystemIcons(SystemIcons id)
+        public static Icon FromSystemIcon(SystemIcons id)
         {
-            Handle = Core.Core.LoadIcon(IntPtr.Zero, (int) id);
+            var ico = new Icon {Handle = Core.Core.LoadIcon(IntPtr.Zero, (int) id)};
+            return ico;
         }
     }
 }

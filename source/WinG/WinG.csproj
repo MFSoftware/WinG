@@ -53,6 +53,7 @@
     <Compile Include="Controls\Base\Object.cs" />
     <Compile Include="Controls\Memo.cs" />
     <Compile Include="Controls\RichEdit.cs" />
+    <Compile Include="Namespaces\Core\Delegates.cs" />
     <Compile Include="Namespaces\Diagnostics\Process.cs" />
     <Compile Include="Controls\ComboBox.cs" />
     <Compile Include="Controls\GroupBox.cs" />

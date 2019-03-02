@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using WinG.Drawing;
@@ -15,7 +16,7 @@ namespace WinG
         {
             set
             {
-                foreach (string line in value.Text.Split('\n'))
+                foreach (var line in value.Text.Split('\n'))
                 {
                     Core.Core.ParseCssLine(line, Handle);
                 }
@@ -27,7 +28,7 @@ namespace WinG
             set
             {
                 Core.Core.SetWindowLong(Handle, -20, WinG.Core.Core.GetWindowLong(this.Handle, -20) | 524288);
-                Core.Core.SetLayeredWindowAttributes(Handle, 0U, Convert.ToByte((int)byte.MaxValue * value / 100), 2U);
+                Core.Core.SetLayeredWindowAttributes(Handle, 0U, Convert.ToByte(byte.MaxValue * value / 100), 2U);
             }
             get => 0;
         }
@@ -36,31 +37,22 @@ namespace WinG
         {
             get
             {
-                IntPtr[] handles = new IntPtr[15];
-                Control[] ctrls = new Control[15];
-                handles[0] = Core.Core.GetWindow(Handle, Core.Core.GetWindowCmd.GW_CHILD);
+                var ctrls = new List<Control>();
 
-                for (int i = 1; i <= 5; i++)
+                foreach (var handle in Core.Core.GetChildWindows(Handle))
                 {
-                    handles[i] = Core.Core.GetWindow(handles[i - 1], Core.Core.GetWindowCmd.GW_HWNDNEXT);
-                    Control c = new Control();
-                    c.Handle = handles[i - 1];
-                    ctrls[i - 1] = c;
+                    var c = new Control();
+                    c.Handle = handle;
+                    ctrls.Add(c);
                 }
-                return ctrls;
+                return ctrls.ToArray();
             }
         }
 
         public WindowState WindowState
         {
-            get
-            {
-                return (WindowState) Core.Core.GetClassLong(Handle, -26);
-            }
-            set
-            {
-                Core.Core.SetClassLongA(Handle.ToInt32(), -26, (int) value);
-            }
+            get => (WindowState) Core.Core.GetClassLong(Handle, -26);
+            set => Core.Core.SetClassLongA(Handle.ToInt32(), -26, (int) value);
         }
 
         public CursorStyle Cursor
@@ -89,7 +81,7 @@ namespace WinG
             set => Core.Core.SetWindowText(Handle, value);
             get
             {
-                StringBuilder buff = new StringBuilder(256);
+                var buff = new StringBuilder(256);
                 return Core.Core.GetWindowText(Handle, buff, 256) > 0 ? buff.ToString() : null;
             }
         }
@@ -103,13 +95,13 @@ namespace WinG
         {
             set
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 Core.Core.SetWindowPos(Handle, 0, 0, 0, value, r.Height, 1);
             }
             get
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.Width;
             }
@@ -119,13 +111,13 @@ namespace WinG
         {
             set
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 Core.Core.SetWindowPos(Handle, 0, 0, 0, r.Width, value, 1);
             }
             get
             {
-                Rect r = new Rect();
+                var r = new Rect();
                 Core.Core.GetWindowRect(Handle, ref r);
                 return r.Height;
             }
@@ -169,7 +161,7 @@ namespace WinG
 
         public void Repaint()
         {
-            Rect r = new Rect();
+            var r = new Rect();
             Core.Core.GetWindowRect(Handle, ref r);
             Core.Core.MoveWindow(Handle, r.X, r.Y, r.Width, r.Height, true);
         }

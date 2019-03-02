@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using System.Text;
@@ -1088,13 +1089,13 @@ namespace WinG.Core
         public static extern bool DeleteFile(string lpFileName);
 
         [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-        public static extern bool GetComputerNameEx(COMPUTER_NAME_FORMAT NameType, StringBuilder lpBuffer, ref uint lpnSize);
+        public static extern bool GetComputerNameEx(COMPUTER_NAME_FORMAT nameType, StringBuilder lpBuffer, ref uint lpnSize);
 
         [DllImport("shell32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern IntPtr ShellExecute(IntPtr hwnd, string lpOperation, string lpFile, string lpParameters, string lpDirectory, int nShowCmd);
 
         [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
-        public static extern IntPtr FindWindowByCaption(IntPtr ZeroOnly, string lpWindowName);
+        public static extern IntPtr FindWindowByCaption(IntPtr zeroOnly, string lpWindowName);
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr LoadAcceleratorsW(IntPtr hInstance, int lpWindowName);
@@ -1112,17 +1113,16 @@ namespace WinG.Core
         [DllImport("gdi32.dll", ExactSpelling = true, SetLastError = true)]
         public static extern bool DeleteDC(IntPtr hdc);
 
-        public static string GenRandomString(int Length)
+        public static string GenRandomString(int length)
         {
-            Random rnd = new Random();
-            string Alphabet = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
-            StringBuilder sb = new StringBuilder(Length - 1);
-            int Position = 0;
+            var rnd = new Random();
+            var Alphabet = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
+            var sb = new StringBuilder(length - 1);
 
-            for (int i = 0; i < Length; i++)
+            for (var i = 0; i < length; i++)
             {
-                Position = rnd.Next(0, Alphabet.Length - 1);
-                sb.Append(Alphabet[Position]);
+                var position = rnd.Next(0, Alphabet.Length - 1);
+                sb.Append(Alphabet[position]);
             }
 
             return sb.ToString();
@@ -1135,10 +1135,10 @@ namespace WinG.Core
         MoveFileFlags dwCopyFlags);
 
         [DllImport("kernel32.dll")]
-        public static extern void FatalExit(int ExitCode);
+        public static extern void FatalExit(int exitCode);
 
         [DllImport("user32.dll")]
-        public static extern void CheckDlgButton(IntPtr HWnd, int idButton, int word);
+        public static extern void CheckDlgButton(IntPtr hWnd, int idButton, int word);
 
         [DllImport("user32.dll")]
         public static extern int IsDlgButtonChecked(IntPtr hDlg, int nIdButton);
@@ -1154,9 +1154,45 @@ namespace WinG.Core
 
         [DllImport("user32.dll", EntryPoint = "SetClassLong")]
         public static extern int SetClassLongA(int hwnd, int nIndex, int dwNewLong);
+        
+        [DllImport("user32")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool EnumChildWindows(IntPtr window, EnumWindowProc callback, IntPtr i);
 
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hwnd, WM m, int wParam, int lParam);
+        
+        private static bool EnumWindow(IntPtr handle, IntPtr pointer)
+        {
+            var gch = GCHandle.FromIntPtr(pointer);
+            if (!(gch.Target is List<IntPtr> list))
+                throw new InvalidCastException("GCHandle Target could not be cast as List<IntPtr>");
+            list.Add(handle);
+
+            return true;
+        }
+        
+        [DllImport("gdi32.dll", EntryPoint="AddFontResourceW", SetLastError=true)]
+        public static extern int AddFontResource([In][MarshalAs(UnmanagedType.LPWStr)] string lpFileName);
+        
+        [DllImport("gdi32.dll", EntryPoint="RemoveFontResourceW", SetLastError=true)]
+        public static extern int RemoveFontResource([In][MarshalAs(UnmanagedType.LPWStr)] string lpFileName);
+        
+        public static List<IntPtr> GetChildWindows(IntPtr parent)
+        {
+            var result = new List<IntPtr>();
+            var listHandle = GCHandle.Alloc(result);
+            try
+            {
+                EnumChildWindows(parent, EnumWindow, GCHandle.ToIntPtr(listHandle));
+            }
+            finally
+            {
+                if (listHandle.IsAllocated)
+                    listHandle.Free();
+            }
+            return result;
+        }
 
         [DllImport("gdi32.dll")]
         public static extern IntPtr CreateFont(int nHeight, int nWidth, int nEscapement,
@@ -1165,7 +1201,7 @@ namespace WinG.Core
         fdwClipPrecision, uint fdwQuality, uint fdwPitchAndFamily, string lpszFace);
 
         [DllImport("user32.dll")]
-        public static extern bool UnregisterClass(string ClassName, IntPtr Instance);
+        public static extern bool UnregisterClass(string className, IntPtr instance);
 
         [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
         public static extern IntPtr LoadImage(IntPtr hinst, string lpszName, uint uType,
@@ -1178,7 +1214,7 @@ namespace WinG.Core
         public static extern int DestroyIcon(IntPtr hIcon);
 
         [DllImport("user32.dll")]
-        public static extern int GetClassName(IntPtr Wnd, StringBuilder ClassName, int MaxCount);
+        public static extern int GetClassName(IntPtr wnd, StringBuilder className, int maxCount);
 
         [DllImport("shell32.dll")]
         public static extern IntPtr ExtractIcon(IntPtr hwnd, string file, int a);
@@ -1215,7 +1251,7 @@ namespace WinG.Core
         public static extern int GetWindowLong(IntPtr hWnd, int nIndex);
 
         [DllImport("user32.dll", SetLastError = true)]
-        internal static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
+        internal static extern bool MoveWindow(IntPtr hWnd, int x, int y, int nWidth, int nHeight, bool bRepaint);
 
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -1289,7 +1325,7 @@ namespace WinG.Core
         public static extern int GetClassLong(IntPtr hWnd, int nIndex);
 
         [DllImport("user32.dll")]
-        public static extern int DrawText(IntPtr hDC, string lpString, int nCount, ref Rect lpRect, uint uFormat);
+        public static extern int DrawText(IntPtr hDc, string lpString, int nCount, ref Rect lpRect, uint uFormat);
 
         [DllImport("user32.dll")]
         public static extern bool EndPaint(IntPtr hWnd, [In] ref PAINTSTRUCT lpPaint);
@@ -1372,7 +1408,7 @@ namespace WinG.Core
         [DllImport("kernel32.dll")]
         public static extern IntPtr LoadLibrary(string dllToLoad);
 
-        public static int MakeCOLORREF(byte r, byte g, byte b)
+        public static int MakeColorref(byte r, byte g, byte b)
         {
             return (int)(((uint)r) | (((uint)g) << 8) | (((uint)b) << 16));
         }
@@ -1415,12 +1451,11 @@ namespace WinG.Core
 
         public static void ParseCssLine(string line, IntPtr hwnd)
         {
-            StringBuilder Buff = new StringBuilder(256);
-            if (Core.GetClassName(hwnd, Buff, 256) > 0) { string type = Buff.ToString(); }
+            //StringBuilder Buff = new StringBuilder(256);
+            //if (Core.GetClassName(hwnd, Buff, 256) > 0) { string type = Buff.ToString(); }
             //int counter = 1;
 
-            string[] arr = line.Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
-            
+            //string[] arr = line.Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }

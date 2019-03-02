@@ -13,34 +13,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/source/repos/ConsoleApp2/ConsoleApp2/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="210">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
-                <marker date="1550484214937" expanded="true" signature="34:480" ph="{...}" />
-                <marker date="1550484214937" expanded="true" signature="54:478" ph="{...}" />
-                <marker date="1550484214937" expanded="true" signature="100:472" ph="{...}" />
+                <marker date="1550744792851" expanded="true" signature="6:30" ph="..." />
+                <marker date="1550744792851" expanded="true" signature="53:521" ph="{...}" />
+                <marker date="1550744792851" expanded="true" signature="73:519" ph="{...}" />
+                <marker date="1550744792851" expanded="true" signature="119:513" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WinG/Application.cs">
+        <entry file="file://$PROJECT_DIR$/WinG/Controls/Classes/Icon.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+            <state relative-caret-position="195">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
-                <marker date="1550485006963" expanded="true" signature="6:51" ph="..." />
-                <marker date="1550485006963" expanded="true" signature="67:2628" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="105:2626" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="162:299" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="333:884" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="531:874" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="980:1545" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="1029:1450" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="1620:2397" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="2444:2509" ph="{...}" />
-                <marker date="1550485006963" expanded="true" signature="2561:2620" ph="{...}" />
+                <marker date="1550745042290" expanded="false" signature="6:178" ph="..." />
+                <marker date="1550745042290" expanded="true" signature="194:928" ph="{...}" />
+                <marker date="1550745042290" expanded="true" signature="218:926" ph="{...}" />
+                <marker date="1550745042290" expanded="true" signature="305:395" ph="{...}" />
+                <marker date="1550745042290" expanded="true" signature="459:543" ph="{...}" />
+                <marker date="1550745042290" expanded="true" signature="597:732" ph="{...}" />
+                <marker date="1550745042290" expanded="true" signature="791:920" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -59,15 +56,19 @@
     <setting file="file://$PROJECT_DIR$/WinG/Controls/Image.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Controls/Base/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Controls/Base/Control.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WinG/Controls/Classes/Icon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WinG/Controls/Classes/Font.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Environment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Application.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/MessageBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Namespaces/Core/Core.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WinG/Namespaces/Core/Delegates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Message.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Controls/Memo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Controls/CheckBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Controls/Window.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WinG/Namespaces/Diagnostics/Process.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Controls/Button.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WinG/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/source/repos/ConsoleApp2/ConsoleApp2/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,22 +79,26 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/WinG/Properties/AssemblyInfo.cs" />
-        <option value="$PROJECT_DIR$/WinG/Namespaces/Core/Core.cs" />
         <option value="$PROJECT_DIR$/WinG/Controls/CheckBox.cs" />
-        <option value="$PROJECT_DIR$/WinG/Controls/Button.cs" />
-        <option value="$PROJECT_DIR$/WinG/Controls/Window.cs" />
         <option value="$PROJECT_DIR$/WinG/Controls/Base/Control.cs" />
         <option value="$PROJECT_DIR$/WinG/Controls/Base/Object.cs" />
-        <option value="$USER_HOME$/source/repos/ConsoleApp2/ConsoleApp2/Program.cs" />
         <option value="$PROJECT_DIR$/WinG/Controls/Memo.cs" />
         <option value="$PROJECT_DIR$/WinG/Controls/ProgressBar.cs" />
-        <option value="$PROJECT_DIR$/WinG/Controls/Label.cs" />
         <option value="$PROJECT_DIR$/WinG/Controls/Edit.cs" />
         <option value="$PROJECT_DIR$/WinG/MessageBox.cs" />
         <option value="$PROJECT_DIR$/WinG/Message.cs" />
         <option value="$PROJECT_DIR$/WinG/Main.cs" />
         <option value="$PROJECT_DIR$/WinG/Environment.cs" />
+        <option value="$PROJECT_DIR$/WinG/Namespaces/Diagnostics/Process.cs" />
+        <option value="$PROJECT_DIR$/WinG/Namespaces/Core/Delegates.cs" />
+        <option value="$PROJECT_DIR$/WinG/Controls/Window.cs" />
+        <option value="$PROJECT_DIR$/WinG/Controls/Label.cs" />
+        <option value="$PROJECT_DIR$/WinG/Controls/Button.cs" />
+        <option value="$PROJECT_DIR$/WinG/Controls/Classes/Font.cs" />
         <option value="$PROJECT_DIR$/WinG/Application.cs" />
+        <option value="$USER_HOME$/source/repos/ConsoleApp2/ConsoleApp2/Program.cs" />
+        <option value="$PROJECT_DIR$/WinG/Namespaces/Core/Core.cs" />
+        <option value="$PROJECT_DIR$/WinG/Controls/Classes/Icon.cs" />
       </list>
     </option>
   </component>
@@ -107,6 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -130,7 +136,7 @@
               <item name="WinG" type="24d0babc:SolutionExplorerModelNode" />
               <item name="WinG" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Controls" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Base" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Classes" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -138,7 +144,6 @@
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,12 +193,13 @@
       <workItem from="1546807625006" duration="1174000" />
       <workItem from="1547913055115" duration="321000" />
       <workItem from="1550468869445" duration="564000" />
-      <workItem from="1550469775416" duration="1750000" />
+      <workItem from="1550469775416" duration="2793000" />
+      <workItem from="1550742052590" duration="2907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3809000" />
+    <option name="totallyTimeSpent" value="7759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,12 +214,11 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
@@ -228,7 +233,8 @@
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.3289689" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -255,244 +261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WinG/Namespaces/Core/Core.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="1154" column="30" lean-forward="true" selection-start-line="1154" selection-start-column="30" selection-end-line="1154" selection-end-column="30" />
-          <folding>
-            <marker date="1550470018517" expanded="true" signature="6:159" ph="..." />
-            <marker date="1550470018517" expanded="true" signature="180:76890" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="204:76888" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="219:62205" ph="Classes" />
-            <marker date="1550470018517" expanded="true" signature="275:496" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="579:803" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="875:1607" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="1694:2515" ph="{...}" />
-            <marker date="1550470018517" expanded="false" signature="1717:1975" ph="Struct members" />
-            <marker date="1550470018517" expanded="true" signature="2016:2170" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="2216:2349" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="2382:2505" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="2624:3149" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="3823:3973" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="4028:4146" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="4204:4541" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="4599:4839" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="4881:5228" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="5311:5711" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="5524:5701" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="5841:6816" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="6866:7437" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="7541:8078" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="8137:10133" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="10176:10505" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="10564:11790" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="11846:12256" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="12337:12628" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="13551:14089" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="14120:61295" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="14832:15366" ph="/// The WM_QUERYENDSESSION message is sent when the user chooses to end the session or when an application calls  ... " />
-            <marker date="1550470018517" expanded="true" signature="15417:15609" ph="/// The WM_QUERYOPEN message is sent to an icon when the user requests that the window be restored to its previou ... " />
-            <marker date="1550470018517" expanded="true" signature="15654:15923" ph="/// The WM_ENDSESSION message is sent to an application after the system processes the results of the WM_QUERYEND ... " />
-            <marker date="1550470018517" expanded="true" signature="15969:16223" ph="/// The WM_QUIT message indicates a request to terminate an application and is generated when the application cal ... " />
-            <marker date="1550470018517" expanded="true" signature="16263:16523" ph="/// The WM_ERASEBKGND message is sent when the window background must be erased (for example, when a window is re ... " />
-            <marker date="1550470018517" expanded="true" signature="16569:16727" ph="/// This message is sent to all top-level windows when a change is made to a system color setting.    ... " />
-            <marker date="1550470018517" expanded="true" signature="16777:16933" ph="/// The WM_SHOWWINDOW message is sent to a window when the window is about to be hidden or shown.   ... " />
-            <marker date="1550470018517" expanded="true" signature="16979:17460" ph="/// An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.IN ... " />
-            <marker date="1550470018517" expanded="true" signature="17508:17989" ph="/// An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.IN ... " />
-            <marker date="1550470018517" expanded="true" signature="18044:18217" ph="/// The WM_DEVMODECHANGE message is sent to all top-level windows whenever the user changes device-mode settings. ... " />
-            <marker date="1550470018517" expanded="true" signature="18266:18592" ph="/// The WM_ACTIVATEAPP message is sent when a window belonging to a different application than the active window  ... " />
-            <marker date="1550470018517" expanded="true" signature="18639:18831" ph="/// An application sends the WM_FONTCHANGE message to all top-level windows in the system after changing the pool ... " />
-            <marker date="1550470018517" expanded="true" signature="18877:19009" ph="/// A message that is sent whenever there is a change in the system time.   ... " />
-            <marker date="1550470018517" expanded="true" signature="19055:19528" ph="/// The WM_CANCELMODE message is sent to cancel certain modes, such as mouse capture. For example, the system sen ... " />
-            <marker date="1550470018517" expanded="true" signature="19574:19770" ph="/// The WM_SETCURSOR message is sent to a window if the mouse causes the cursor to move within a window and mouse ... " />
-            <marker date="1550470018517" expanded="true" signature="19815:20098" ph="/// The WM_MOUSEACTIVATE message is sent when the cursor is in an inactive window and the user presses a mouse bu ... " />
-            <marker date="1550470018517" expanded="true" signature="20147:20358" ph="/// The WM_CHILDACTIVATE message is sent to a child window when the user clicks the window's title bar or when th ... " />
-            <marker date="1550470018517" expanded="true" signature="20407:20654" ph="/// The WM_QUEUESYNC message is sent by a computer-based training (CBT) application to separate user-input messag ... " />
-            <marker date="1550470018517" expanded="true" signature="20699:21018" ph="/// The WM_GETMINMAXINFO message is sent to a window when the size or position of the window is about to change.  ... " />
-            <marker date="1550470018517" expanded="true" signature="21067:21368" ph="/// Windows NT 3.51 and earlier: The WM_PAINTICON message is sent to a minimized window when the icon is to be pa ... " />
-            <marker date="1550470018517" expanded="true" signature="21413:21805" ph="/// Windows NT 3.51 and earlier: The WM_ICONERASEBKGND message is sent to a minimized window when the background  ... " />
-            <marker date="1550470018517" expanded="true" signature="21855:22046" ph="/// The WM_NEXTDLGCTL message is sent to a dialog box procedure to set the keyboard focus to a different control  ... " />
-            <marker date="1550470018517" expanded="true" signature="22092:22279" ph="/// The WM_SPOOLERSTATUS message is sent from Print Manager whenever a job is added to or removed from the Print  ... " />
-            <marker date="1550470018517" expanded="true" signature="22328:22576" ph="/// The WM_DRAWITEM message is sent to the parent window of an owner-drawn button, combo box, list box, or menu w ... " />
-            <marker date="1550470018517" expanded="true" signature="22620:22832" ph="/// The WM_MEASUREITEM message is sent to the owner window of a combo box, list box, list view control, or menu i ... " />
-            <marker date="1550470018517" expanded="true" signature="22879:23316" ph="/// Sent to the owner of a list box or combo box when the list box or combo box is destroyed or when items are re ... " />
-            <marker date="1550470018517" expanded="true" signature="23362:23531" ph="/// Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_KEYDOWN message.    ... " />
-            <marker date="1550470018517" expanded="true" signature="23577:23743" ph="/// Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_CHAR message.    ... " />
-            <marker date="1550470018517" expanded="true" signature="24845:25180" ph="/// The WM_NCHITTEST message is sent to a window when the cursor moves, or when a mouse button is pressed or rele ... " />
-            <marker date="1550470018517" expanded="true" signature="25225:25363" ph="/// The WM_NCPAINT message is sent to a window when its frame must be painted.    ... " />
-            <marker date="1550470018517" expanded="true" signature="25406:25599" ph="/// The WM_NCACTIVATE message is sent to a window when its nonclient area needs to be changed to indicate an acti ... " />
-            <marker date="1550470018517" expanded="true" signature="25645:26090" ph="/// The WM_GETDLGCODE message is sent to the window procedure associated with a control. By default, the system h ... " />
-            <marker date="1550470018517" expanded="true" signature="26136:26303" ph="/// The WM_SYNCPAINT message is used to synchronize painting while avoiding linking independent GUI threads.   ... " />
-            <marker date="1550470018517" expanded="true" signature="26348:26652" ph="/// The WM_NCMOUSEMOVE message is posted to a window when the cursor is moved within the nonclient area of the wi ... " />
-            <marker date="1550470018517" expanded="true" signature="26699:27030" ph="/// The WM_NCLBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is within ... " />
-            <marker date="1550470018517" expanded="true" signature="27079:27409" ph="/// The WM_NCLBUTTONUP message is posted when the user releases the left mouse button while the cursor is within  ... " />
-            <marker date="1550470018517" expanded="true" signature="27456:27795" ph="/// The WM_NCLBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor i ... " />
-            <marker date="1550470018517" expanded="true" signature="27846:28178" ph="/// The WM_NCRBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is withi ... " />
-            <marker date="1550470018517" expanded="true" signature="28227:28558" ph="/// The WM_NCRBUTTONUP message is posted when the user releases the right mouse button while the cursor is within ... " />
-            <marker date="1550470018517" expanded="true" signature="28605:28945" ph="/// The WM_NCRBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor  ... " />
-            <marker date="1550470018517" expanded="true" signature="28996:29329" ph="/// The WM_NCMBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is with ... " />
-            <marker date="1550470018517" expanded="true" signature="29378:29710" ph="/// The WM_NCMBUTTONUP message is posted when the user releases the middle mouse button while the cursor is withi ... " />
-            <marker date="1550470018517" expanded="true" signature="29757:30098" ph="/// The WM_NCMBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor ... " />
-            <marker date="1550470018517" expanded="true" signature="30149:30483" ph="/// The WM_NCXBUTTONDOWN message is posted when the user presses the first or second X button while the cursor is ... " />
-            <marker date="1550470018517" expanded="true" signature="30532:30865" ph="/// The WM_NCXBUTTONUP message is posted when the user releases the first or second X button while the cursor is  ... " />
-            <marker date="1550470018517" expanded="true" signature="30912:31254" ph="/// The WM_NCXBUTTONDBLCLK message is posted when the user double-clicks the first or second X button while the c ... " />
-            <marker date="1550470018517" expanded="true" signature="31305:31526" ph="/// The WM_INPUT_DEVICE_CHANGE message is sent to the window that registered to receive raw input. A window recei ... " />
-            <marker date="1550470018517" expanded="true" signature="31581:31714" ph="/// The WM_INPUT message is sent to the window that is getting raw input.    ... " />
-            <marker date="1550470018517" expanded="true" signature="31755:31861" ph="/// This message filters for keyboard messages.   ... " />
-            <marker date="1550470018517" expanded="true" signature="31905:32146" ph="/// The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem key is pressed. A non ... " />
-            <marker date="1550470018517" expanded="true" signature="32189:32501" ph="/// The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem key is released. A nons ... " />
-            <marker date="1550470018517" expanded="true" signature="32542:32824" ph="/// The WM_CHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translated b ... " />
-            <marker date="1550470018517" expanded="true" signature="32864:33416" ph="/// The WM_DEADCHAR message is posted to the window with the keyboard focus when a WM_KEYUP message is translated ... " />
-            <marker date="1550470018517" expanded="true" signature="33460:33986" ph="/// The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user presses the F10 key ( ... " />
-            <marker date="1550470018517" expanded="true" signature="34032:34512" ph="/// The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user releases a key that was ... " />
-            <marker date="1550470018517" expanded="true" signature="34556:34895" ph="/// The WM_SYSCHAR message is posted to the window with the keyboard focus when a WM_SYSKEYDOWN message is transl ... " />
-            <marker date="1550470018517" expanded="true" signature="34938:35286" ph="/// The WM_SYSDEADCHAR message is sent to the window with the keyboard focus when a WM_SYSKEYDOWN message is tran ... " />
-            <marker date="1550470018517" expanded="true" signature="35333:35897" ph="/// The WM_UNICHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translate ... " />
-            <marker date="1550470018517" expanded="true" signature="35940:36046" ph="/// This message filters for keyboard messages.   ... " />
-            <marker date="1550470018517" expanded="true" signature="36089:36309" ph="/// Sent immediately before the IME generates the composition string as a result of a keystroke. A window receive ... " />
-            <marker date="1550470018517" expanded="true" signature="36365:36546" ph="/// Sent to an application when the IME ends composition. A window receives this message through its WindowProc f ... " />
-            <marker date="1550470018517" expanded="true" signature="36600:36818" ph="/// Sent to an application when the IME changes composition status as a result of a keystroke. A window receives  ... " />
-            <marker date="1550470018517" expanded="true" signature="36903:37237" ph="/// The WM_INITDIALOG message is sent to the dialog box procedure immediately before a dialog box is displayed. D ... " />
-            <marker date="1550470018517" expanded="true" signature="37283:37541" ph="/// The WM_COMMAND message is sent when the user selects a command item from a menu, when a control sends a notif ... " />
-            <marker date="1550470018517" expanded="true" signature="37584:37882" ph="/// A window receives this message when the user chooses a command from the Window menu, clicks the maximize butt ... " />
-            <marker date="1550470018517" expanded="true" signature="37928:38150" ph="/// The WM_TIMER message is posted to the installing thread's message queue when a timer expires. The message is  ... " />
-            <marker date="1550470018517" expanded="true" signature="38191:38489" ph="/// The WM_HSCROLL message is sent to a window when a scroll event occurs in the window's standard horizontal scr ... " />
-            <marker date="1550470018517" expanded="true" signature="38532:38826" ph="/// The WM_VSCROLL message is sent to a window when a scroll event occurs in the window's standard vertical scrol ... " />
-            <marker date="1550470018517" expanded="true" signature="38869:39152" ph="/// The WM_INITMENU message is sent when a menu is about to become active. It occurs when the user clicks an item ... " />
-            <marker date="1550470018517" expanded="true" signature="39196:39460" ph="/// The WM_INITMENUPOPUP message is sent when a drop-down menu or submenu is about to become active. This allows  ... " />
-            <marker date="1550470018517" expanded="true" signature="39509:39666" ph="/// The WM_MENUSELECT message is sent to a menu's owner window when the user selects a menu item.    ... " />
-            <marker date="1550470018517" expanded="true" signature="39712:39972" ph="/// The WM_MENUCHAR message is sent when a menu is active and the user presses a key that does not correspond to  ... " />
-            <marker date="1550470018517" expanded="true" signature="40016:40338" ph="/// The WM_ENTERIDLE message is sent to the owner window of a modal dialog box or menu that is entering an idle s ... " />
-            <marker date="1550470018517" expanded="true" signature="40383:40565" ph="/// The WM_MENURBUTTONUP message is sent when the user releases the right mouse button while the cursor is on a m ... " />
-            <marker date="1550470018517" expanded="true" signature="40614:40779" ph="/// The WM_MENUDRAG message is sent to the owner of a drag-and-drop menu when the user drags a menu item.    ... " />
-            <marker date="1550470018517" expanded="true" signature="40823:41072" ph="/// The WM_MENUGETOBJECT message is sent to the owner of a drag-and-drop menu when the mouse cursor enters a menu ... " />
-            <marker date="1550470018517" expanded="true" signature="41121:41276" ph="/// The WM_UNINITMENUPOPUP message is sent when a drop-down menu or submenu has been destroyed.    ... " />
-            <marker date="1550470018517" expanded="true" signature="41327:41470" ph="/// The WM_MENUCOMMAND message is sent when the user makes a selection from a menu.    ... " />
-            <marker date="1550470018517" expanded="true" signature="41517:41695" ph="/// An application sends the WM_CHANGEUISTATE message to indicate that the user interface (UI) state should be ch ... " />
-            <marker date="1550470018517" expanded="true" signature="41744:41948" ph="/// An application sends the WM_UPDATEUISTATE message to change the user interface (UI) state for the specified w ... " />
-            <marker date="1550470018517" expanded="true" signature="41997:42164" ph="/// An application sends the WM_QUERYUISTATE message to retrieve the user interface (UI) state for a window.   ... " />
-            <marker date="1550470018517" expanded="true" signature="42212:42544" ph="/// The WM_CTLCOLORMSGBOX message is sent to the owner window of a message box before Windows draws the message b ... " />
-            <marker date="1550470018517" expanded="true" signature="42594:42953" ph="/// An edit control that is not read-only or disabled sends the WM_CTLCOLOREDIT message to its parent window when ... " />
-            <marker date="1550470018517" expanded="true" signature="43001:43300" ph="/// Sent to the parent window of a list box before the system draws the list box. By responding to this message,  ... " />
-            <marker date="1550470018517" expanded="true" signature="43351:43667" ph="/// The WM_CTLCOLORBTN message is sent to the parent window of a button before drawing the button. The parent win ... " />
-            <marker date="1550470018517" expanded="true" signature="43714:44004" ph="/// The WM_CTLCOLORDLG message is sent to a dialog box before the system draws the dialog box. By responding to t ... " />
-            <marker date="1550470018517" expanded="true" signature="44051:44378" ph="/// The WM_CTLCOLORSCROLLBAR message is sent to the parent window of a scroll bar control when the control is abo ... " />
-            <marker date="1550470018517" expanded="true" signature="44431:44812" ph="/// A static control, or an edit control that is read-only or disabled, sends the WM_CTLCOLORSTATIC message to it ... " />
-            <marker date="1550470018517" expanded="true" signature="44862:45010" ph="/// Use WM_MOUSEFIRST to specify the first mouse message. Use the PeekMessage() Function.   ... " />
-            <marker date="1550470018517" expanded="true" signature="45056:45356" ph="/// The WM_MOUSEMOVE message is posted to a window when the cursor moves. If the mouse is not captured, the messa ... " />
-            <marker date="1550470018517" expanded="true" signature="45401:45758" ph="/// The WM_LBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is in the c ... " />
-            <marker date="1550470018517" expanded="true" signature="45805:46161" ph="/// The WM_LBUTTONUP message is posted when the user releases the left mouse button while the cursor is in the cl ... " />
-            <marker date="1550470018517" expanded="true" signature="46206:46571" ph="/// The WM_LBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor is  ... " />
-            <marker date="1550470018517" expanded="true" signature="46620:46978" ph="/// The WM_RBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is in the  ... " />
-            <marker date="1550470018517" expanded="true" signature="47025:47382" ph="/// The WM_RBUTTONUP message is posted when the user releases the right mouse button while the cursor is in the c ... " />
-            <marker date="1550470018517" expanded="true" signature="47427:47793" ph="/// The WM_RBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor is ... " />
-            <marker date="1550470018517" expanded="true" signature="47842:48201" ph="/// The WM_MBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is in the ... " />
-            <marker date="1550470018517" expanded="true" signature="48248:48606" ph="/// The WM_MBUTTONUP message is posted when the user releases the middle mouse button while the cursor is in the  ... " />
-            <marker date="1550470018517" expanded="true" signature="48651:49018" ph="/// The WM_MBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor i ... " />
-            <marker date="1550470018517" expanded="true" signature="49067:49442" ph="/// The WM_MOUSEWHEEL message is sent to the focus window when the mouse wheel is rotated. The DefWindowProc func ... " />
-            <marker date="1550470018517" expanded="true" signature="49488:49853" ph="/// The WM_XBUTTONDOWN message is posted when the user presses the first or second X button while the cursor is i ... " />
-            <marker date="1550470018517" expanded="true" signature="49900:50263" ph="/// The WM_XBUTTONUP message is posted when the user releases the first or second X button while the cursor is in ... " />
-            <marker date="1550470018517" expanded="true" signature="50308:50680" ph="/// The WM_XBUTTONDBLCLK message is posted when the user double-clicks the first or second X button while the cur ... " />
-            <marker date="1550470018517" expanded="true" signature="50729:51135" ph="/// The WM_MOUSEHWHEEL message is sent to the focus window when the mouse's horizontal scroll wheel is tilted or  ... " />
-            <marker date="1550470018517" expanded="true" signature="51182:51330" ph="/// Use WM_MOUSELAST to specify the last mouse message. Used with PeekMessage() Function.   ... " />
-            <marker date="1550470018517" expanded="true" signature="51375:51924" ph="/// The WM_PARENTNOTIFY message is sent to the parent of a child window when the child window is created or destr ... " />
-            <marker date="1550470018517" expanded="true" signature="51972:52152" ph="/// The WM_ENTERMENULOOP message informs an application's main window procedure that a menu modal loop has been e ... " />
-            <marker date="1550470018517" expanded="true" signature="52201:52379" ph="/// The WM_EXITMENULOOP message informs an application's main window procedure that a menu modal loop has been ex ... " />
-            <marker date="1550470018517" expanded="true" signature="52427:52633" ph="/// The WM_NEXTMENU message is sent to an application when the right or left arrow key is used to switch between  ... " />
-            <marker date="1550470018517" expanded="true" signature="52677:52953" ph="/// The WM_SIZING message is sent to a window that the user is resizing. By processing this message, an applicati ... " />
-            <marker date="1550470018517" expanded="true" signature="52995:53143" ph="/// The WM_CAPTURECHANGED message is sent to the window that is losing the mouse capture.   ... " />
-            <marker date="1550470018517" expanded="true" signature="53193:53449" ph="/// The WM_MOVING message is sent to a window that the user is moving. By processing this message, an application ... " />
-            <marker date="1550470018517" expanded="true" signature="53491:53619" ph="/// Notifies applications that a power-management event has occurred.   ... " />
-            <marker date="1550470018517" expanded="true" signature="53669:53826" ph="/// Notifies an application of a change to the hardware configuration of a device or the computer.   ... " />
-            <marker date="1550470018517" expanded="true" signature="53874:54067" ph="/// An application sends the WM_MDICREATE message to a multiple-document interface (MDI) client window to create  ... " />
-            <marker date="1550470018517" expanded="true" signature="54112:54305" ph="/// An application sends the WM_MDIDESTROY message to a multiple-document interface (MDI) client window to close  ... " />
-            <marker date="1550470018517" expanded="true" signature="54351:54587" ph="/// An application sends the WM_MDIACTIVATE message to a multiple-document interface (MDI) client window to instr ... " />
-            <marker date="1550470018517" expanded="true" signature="54634:54862" ph="/// An application sends the WM_MDIRESTORE message to a multiple-document interface (MDI) client window to restor ... " />
-            <marker date="1550470018517" expanded="true" signature="54908:55115" ph="/// An application sends the WM_MDINEXT message to a multiple-document interface (MDI) client window to activate  ... " />
-            <marker date="1550470018517" expanded="true" signature="55158:55712" ph="/// An application sends the WM_MDIMAXIMIZE message to a multiple-document interface (MDI) client window to maxim ... " />
-            <marker date="1550470018517" expanded="true" signature="55759:55977" ph="/// An application sends the WM_MDITILE message to a multiple-document interface (MDI) client window to arrange a ... " />
-            <marker date="1550470018517" expanded="true" signature="56020:56237" ph="/// An application sends the WM_MDICASCADE message to a multiple-document interface (MDI) client window to arrang ... " />
-            <marker date="1550470018517" expanded="true" signature="56283:56551" ph="/// An application sends the WM_MDIICONARRANGE message to a multiple-document interface (MDI) client window to ar ... " />
-            <marker date="1550470018517" expanded="true" signature="56601:56821" ph="/// An application sends the WM_MDIGETACTIVE message to a multiple-document interface (MDI) client window to retr ... " />
-            <marker date="1550470018517" expanded="true" signature="56869:57140" ph="/// An application sends the WM_MDISETMENU message to a multiple-document interface (MDI) client window to replac ... " />
-            <marker date="1550470018517" expanded="true" signature="57186:57811" ph="/// The WM_ENTERSIZEMOVE message is sent one time to a window after it enters the moving or sizing modal loop. Th ... " />
-            <marker date="1550470018517" expanded="true" signature="57860:58362" ph="/// The WM_EXITSIZEMOVE message is sent one time to a window, after it has exited the moving or sizing modal loop ... " />
-            <marker date="1550470018517" expanded="true" signature="58410:58596" ph="/// Sent when the user drops a file on the window of an application that has registered itself as a recipient of  ... " />
-            <marker date="1550470018517" expanded="true" signature="58641:58860" ph="/// An application sends the WM_MDIREFRESHMENU message to a multiple-document interface (MDI) client window to re ... " />
-            <marker date="1550470018517" expanded="true" signature="58910:59088" ph="/// Sent to an application when a window is activated. A window receives this message through its WindowProc func ... " />
-            <marker date="1550470018517" expanded="true" signature="59138:59331" ph="/// Sent to an application to notify it of changes to the IME window. A window receives this message through its  ... " />
-            <marker date="1550470018517" expanded="true" signature="61328:61884" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="61967:62185" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="63853:64307" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="64126:64262" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="72741:72862" ph="/* [DllImport(&quot;user32.dll&quot;)] ... */" />
-            <marker date="1550470018517" expanded="true" signature="74885:74981" ph="{...}" />
-            <marker date="1550470018517" expanded="true" signature="76569:76882" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WinG/Controls/CheckBox.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <marker date="1550483578497" expanded="false" signature="6:203" ph="..." />
-            <marker date="1550483578497" expanded="true" signature="219:1903" ph="{...}" />
-            <marker date="1550483578497" expanded="true" signature="257:1901" ph="{...}" />
-            <marker date="1550483578497" expanded="true" signature="272:803" ph="Properties" />
-            <marker date="1550483578497" expanded="true" signature="319:475" ph="{...}" />
-            <marker date="1550483578497" expanded="true" signature="503:783" ph="{...}" />
-            <marker date="1550483578497" expanded="true" signature="588:773" ph="{...}" />
-            <marker date="1550483578497" expanded="true" signature="840:1141" ph="{...}" />
-            <marker date="1550483578497" expanded="true" signature="1168:1895" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WinG/Controls/Window.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <marker date="1550483999450" expanded="true" signature="6:78" ph="..." />
-            <marker date="1550483999450" expanded="true" signature="94:5608" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="120:5606" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="135:3814" ph="Properties" />
-            <marker date="1550483999450" expanded="true" signature="221:443" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="247:433" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="325:419" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="476:793" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="502:761" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="828:1435" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="854:1425" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1107:1381" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1475:1734" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1501:1603" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1619:1724" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1769:2119" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1865:2109" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="1896:2095" ph="/* Core.Core.SetClassLongA(Handle.ToInt32(), -12, Core.Core.LoadCursor(Handle, value).ToInt32()); ... */" />
-            <marker date="1550483999450" expanded="true" signature="2151:2315" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="2341:2452" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="2480:2760" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="2565:2750" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="2793:2935" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="2961:3364" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="2987:3185" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="3201:3354" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="3391:3794" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="3417:3614" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="3630:3784" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="3850:4308" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="4333:4832" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="4863:5045" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="5073:5192" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="5220:5300" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="5329:5394" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="5422:5487" ph="{...}" />
-            <marker date="1550483999450" expanded="true" signature="5526:5600" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,30 +272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-810">
           <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding>
-            <marker date="1550484114416" expanded="true" signature="6:33" ph="..." />
-            <marker date="1550484114416" expanded="true" signature="49:2918" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="85:2916" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="116:538" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="142:359" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="375:528" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="567:699" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="726:1148" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="752:968" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="984:1138" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="1177:1631" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="1203:1567" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="1248:1553" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="1661:1784" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="1809:2215" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="1835:1984" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="2000:2205" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="2239:2645" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="2265:2414" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="2430:2635" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="2673:2772" ph="{...}" />
-            <marker date="1550484114416" expanded="true" signature="2819:2910" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,37 +279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <marker date="1550484196557" expanded="true" signature="6:32" ph="..." />
-            <marker date="1550484196557" expanded="true" signature="48:448" ph="{...}" />
-            <marker date="1550484196557" expanded="true" signature="74:446" ph="{...}" />
-            <marker date="1550484196557" expanded="true" signature="175:395" ph="{...}" />
-            <marker date="1550484196557" expanded="true" signature="201:385" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WinG/Controls/Button.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <marker date="1550483688602" expanded="true" signature="6:32" ph="..." />
-            <marker date="1550483688602" expanded="true" signature="48:2352" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="84:2350" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="99:1242" ph="Properties" />
-            <marker date="1550483688602" expanded="true" signature="143:262" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="297:437" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="323:427" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="465:745" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="550:735" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="777:920" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="952:1091" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="1115:1222" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="1141:1212" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="1277:1576" ph="{...}" />
-            <marker date="1550483688602" expanded="true" signature="1601:2344" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,16 +286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <marker date="1550484250272" expanded="true" signature="6:32" ph="..." />
-            <marker date="1550484250272" expanded="true" signature="48:1507" ph="{...}" />
-            <marker date="1550484250272" expanded="true" signature="82:1505" ph="{...}" />
-            <marker date="1550484250272" expanded="true" signature="97:443" ph="Properties" />
-            <marker date="1550484250272" expanded="true" signature="143:423" ph="{...}" />
-            <marker date="1550484250272" expanded="true" signature="228:413" ph="{...}" />
-            <marker date="1550484250272" expanded="true" signature="476:731" ph="{...}" />
-            <marker date="1550484250272" expanded="true" signature="754:1499" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,39 +306,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WinG/Controls/Label.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <marker date="1550484373938" expanded="true" signature="6:32" ph="..." />
-            <marker date="1550484373938" expanded="true" signature="48:1675" ph="{...}" />
-            <marker date="1550484373938" expanded="true" signature="83:1673" ph="{...}" />
-            <marker date="1550484373938" expanded="true" signature="98:589" ph="Properties" />
-            <marker date="1550484373938" expanded="true" signature="144:424" ph="{...}" />
-            <marker date="1550484373938" expanded="true" signature="229:414" ph="{...}" />
-            <marker date="1550484373938" expanded="true" signature="450:569" ph="{...}" />
-            <marker date="1550484373938" expanded="true" signature="623:907" ph="{...}" />
-            <marker date="1550484373938" expanded="true" signature="931:1667" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WinG/Controls/Edit.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <marker date="1550484418050" expanded="true" signature="6:32" ph="..." />
-            <marker date="1550484418050" expanded="true" signature="48:1614" ph="{...}" />
-            <marker date="1550484418050" expanded="true" signature="82:1612" ph="{...}" />
-            <marker date="1550484418050" expanded="true" signature="97:588" ph="Properties" />
-            <marker date="1550484418050" expanded="true" signature="141:260" ph="{...}" />
-            <marker date="1550484418050" expanded="true" signature="288:568" ph="{...}" />
-            <marker date="1550484418050" expanded="true" signature="373:558" ph="{...}" />
-            <marker date="1550484418050" expanded="true" signature="621:876" ph="{...}" />
-            <marker date="1550484418050" expanded="true" signature="899:1606" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,10 +338,171 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Namespaces/Diagnostics/Process.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <marker date="1550742258236" expanded="true" signature="41:793" ph="{...}" />
+            <marker date="1550742258236" expanded="true" signature="68:791" ph="{...}" />
+            <marker date="1550742258236" expanded="true" signature="226:437" ph="{...}" />
+            <marker date="1550742258236" expanded="true" signature="488:590" ph="{...}" />
+            <marker date="1550742258236" expanded="true" signature="662:785" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Namespaces/Core/Delegates.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1550742395690" expanded="true" signature="34:110" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Controls/Window.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2254">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <marker date="1550744486429" expanded="false" signature="6:112" ph="..." />
+            <marker date="1550744486429" expanded="true" signature="128:5303" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="154:5301" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="169:3510" ph="Properties" />
+            <marker date="1550744486429" expanded="true" signature="255:474" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="281:464" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="356:450" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="507:819" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="533:787" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="854:1234" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="880:1224" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="1018:1170" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="1274:1444" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="1479:1829" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="1575:1819" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="1606:1805" ph="/* Core.Core.SetClassLongA(Handle.ToInt32(), -12, Core.Core.LoadCursor(Handle, value).ToInt32()); ... */" />
+            <marker date="1550744486429" expanded="true" signature="1861:2025" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2051:2162" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2190:2460" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2275:2450" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2493:2635" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2661:3062" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2687:2884" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="2900:3052" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="3089:3490" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="3115:3311" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="3327:3480" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="3546:4004" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="4029:4528" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="4559:4740" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="4768:4887" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="4915:4995" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="5024:5089" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="5117:5182" ph="{...}" />
+            <marker date="1550744486429" expanded="true" signature="5221:5295" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Controls/Label.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <marker date="1550744486305" expanded="false" signature="6:32" ph="..." />
+            <marker date="1550744486305" expanded="true" signature="48:2462" ph="{...}" />
+            <marker date="1550744486305" expanded="true" signature="83:2460" ph="{...}" />
+            <marker date="1550744486305" expanded="false" signature="98:579" ph="Properties" />
+            <marker date="1550744486305" expanded="true" signature="144:414" ph="{...}" />
+            <marker date="1550744486305" expanded="true" signature="229:404" ph="{...}" />
+            <marker date="1550744486305" expanded="true" signature="440:559" ph="{...}" />
+            <marker date="1550744486305" expanded="true" signature="613:897" ph="{...}" />
+            <marker date="1550744486305" expanded="true" signature="932:1694" ph="{...}" />
+            <marker date="1550744486305" expanded="true" signature="1718:2454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Controls/Button.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <marker date="1550744487360" expanded="false" signature="6:32" ph="..." />
+            <marker date="1550744487360" expanded="true" signature="48:3147" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="84:3145" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="99:1232" ph="Properties" />
+            <marker date="1550744487360" expanded="true" signature="143:262" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="297:437" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="323:427" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="465:735" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="550:725" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="767:910" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="942:1081" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="1105:1212" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="1131:1202" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="1267:1566" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="1602:2371" ph="{...}" />
+            <marker date="1550744487360" expanded="true" signature="2396:3139" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Controls/Classes/Font.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <marker date="1550744276152" expanded="false" signature="6:115" ph="..." />
+            <marker date="1550744276152" expanded="true" signature="131:1265" ph="{...}" />
+            <marker date="1550744276152" expanded="true" signature="155:1263" ph="{...}" />
+            <marker date="1550744276152" expanded="true" signature="270:312" ph="{...}" />
+            <marker date="1550744276152" expanded="true" signature="486:555" ph="{...}" />
+            <marker date="1550744276152" expanded="true" signature="615:687" ph="{...}" />
+            <marker date="1550744276152" expanded="true" signature="715:1257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Application.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding>
+            <marker date="1550744487728" expanded="false" signature="6:51" ph="..." />
+            <marker date="1550744487728" expanded="true" signature="67:2596" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="105:2594" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="162:291" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="325:876" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="523:866" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="972:1530" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="1021:1435" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="1605:2365" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="2412:2477" ph="{...}" />
+            <marker date="1550744487728" expanded="true" signature="2529:2588" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Environment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <marker date="1550744487077" expanded="true" signature="6:85" ph="..." />
+            <marker date="1550744487077" expanded="true" signature="101:552" ph="{...}" />
+            <marker date="1550744487077" expanded="true" signature="139:550" ph="{...}" />
+            <marker date="1550744487077" expanded="true" signature="196:544" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WinG/Message.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding>
             <marker date="1550484538608" expanded="true" signature="14:173" ph="{...}" />
             <marker date="1550484538608" expanded="true" signature="48:171" ph="{...}" />
@@ -674,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WinG/Main.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="191" column="19" selection-start-line="191" selection-start-column="19" selection-end-line="191" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <marker date="1550484551010" expanded="true" signature="14:4871" ph="{...}" />
             <marker date="1550484551010" expanded="true" signature="44:373" ph="{...}" />
@@ -694,47 +533,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WinG/Environment.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <marker date="1550484767183" expanded="true" signature="6:85" ph="..." />
-            <marker date="1550484767183" expanded="true" signature="101:553" ph="{...}" />
-            <marker date="1550484767183" expanded="true" signature="139:551" ph="{...}" />
-            <marker date="1550484767183" expanded="true" signature="196:545" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/source/repos/ConsoleApp2/ConsoleApp2/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="210">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
-            <marker date="1550484214937" expanded="true" signature="34:480" ph="{...}" />
-            <marker date="1550484214937" expanded="true" signature="54:478" ph="{...}" />
-            <marker date="1550484214937" expanded="true" signature="100:472" ph="{...}" />
+            <marker date="1550744792851" expanded="true" signature="6:30" ph="..." />
+            <marker date="1550744792851" expanded="true" signature="53:521" ph="{...}" />
+            <marker date="1550744792851" expanded="true" signature="73:519" ph="{...}" />
+            <marker date="1550744792851" expanded="true" signature="119:513" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WinG/Application.cs">
+    <entry file="file://$PROJECT_DIR$/WinG/Namespaces/Core/Core.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+        <state relative-caret-position="98">
+          <caret line="1133" column="61" lean-forward="true" selection-start-line="1133" selection-start-column="61" selection-end-line="1133" selection-end-column="61" />
           <folding>
-            <marker date="1550485006963" expanded="true" signature="6:51" ph="..." />
-            <marker date="1550485006963" expanded="true" signature="67:2628" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="105:2626" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="162:299" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="333:884" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="531:874" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="980:1545" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="1029:1450" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="1620:2397" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="2444:2509" ph="{...}" />
-            <marker date="1550485006963" expanded="true" signature="2561:2620" ph="{...}" />
+            <marker date="1550744895899" expanded="false" signature="6:193" ph="..." />
+            <marker date="1550744895899" expanded="true" signature="214:78309" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="238:78307" ph="{...}" />
+            <marker date="1550744895899" expanded="false" signature="253:62239" ph="Classes" />
+            <marker date="1550744895899" expanded="true" signature="309:530" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="613:837" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="909:1641" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="1728:2549" ph="{...}" />
+            <marker date="1550744895899" expanded="false" signature="1751:2009" ph="Struct members" />
+            <marker date="1550744895899" expanded="true" signature="2050:2204" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="2250:2383" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="2416:2539" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="2658:3183" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="3857:4007" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="4062:4180" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="4238:4575" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="4633:4873" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="4915:5262" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="5345:5745" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="5558:5735" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="5875:6850" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="6900:7471" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="7575:8112" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="8171:10167" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="10210:10539" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="10598:11824" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="11880:12290" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="12371:12662" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="13585:14123" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="14154:61329" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="14866:15400" ph="/// The WM_QUERYENDSESSION message is sent when the user chooses to end the session or when an application calls  ... " />
+            <marker date="1550744895899" expanded="true" signature="15451:15643" ph="/// The WM_QUERYOPEN message is sent to an icon when the user requests that the window be restored to its previou ... " />
+            <marker date="1550744895899" expanded="true" signature="15688:15957" ph="/// The WM_ENDSESSION message is sent to an application after the system processes the results of the WM_QUERYEND ... " />
+            <marker date="1550744895899" expanded="true" signature="16003:16257" ph="/// The WM_QUIT message indicates a request to terminate an application and is generated when the application cal ... " />
+            <marker date="1550744895899" expanded="true" signature="16297:16557" ph="/// The WM_ERASEBKGND message is sent when the window background must be erased (for example, when a window is re ... " />
+            <marker date="1550744895899" expanded="true" signature="16603:16761" ph="/// This message is sent to all top-level windows when a change is made to a system color setting.    ... " />
+            <marker date="1550744895899" expanded="true" signature="16811:16967" ph="/// The WM_SHOWWINDOW message is sent to a window when the window is about to be hidden or shown.   ... " />
+            <marker date="1550744895899" expanded="true" signature="17013:17494" ph="/// An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.IN ... " />
+            <marker date="1550744895899" expanded="true" signature="17542:18023" ph="/// An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.IN ... " />
+            <marker date="1550744895899" expanded="true" signature="18078:18251" ph="/// The WM_DEVMODECHANGE message is sent to all top-level windows whenever the user changes device-mode settings. ... " />
+            <marker date="1550744895899" expanded="true" signature="18300:18626" ph="/// The WM_ACTIVATEAPP message is sent when a window belonging to a different application than the active window  ... " />
+            <marker date="1550744895899" expanded="true" signature="18673:18865" ph="/// An application sends the WM_FONTCHANGE message to all top-level windows in the system after changing the pool ... " />
+            <marker date="1550744895899" expanded="true" signature="18911:19043" ph="/// A message that is sent whenever there is a change in the system time.   ... " />
+            <marker date="1550744895899" expanded="true" signature="19089:19562" ph="/// The WM_CANCELMODE message is sent to cancel certain modes, such as mouse capture. For example, the system sen ... " />
+            <marker date="1550744895899" expanded="true" signature="19608:19804" ph="/// The WM_SETCURSOR message is sent to a window if the mouse causes the cursor to move within a window and mouse ... " />
+            <marker date="1550744895899" expanded="true" signature="19849:20132" ph="/// The WM_MOUSEACTIVATE message is sent when the cursor is in an inactive window and the user presses a mouse bu ... " />
+            <marker date="1550744895899" expanded="true" signature="20181:20392" ph="/// The WM_CHILDACTIVATE message is sent to a child window when the user clicks the window's title bar or when th ... " />
+            <marker date="1550744895899" expanded="true" signature="20441:20688" ph="/// The WM_QUEUESYNC message is sent by a computer-based training (CBT) application to separate user-input messag ... " />
+            <marker date="1550744895899" expanded="true" signature="20733:21052" ph="/// The WM_GETMINMAXINFO message is sent to a window when the size or position of the window is about to change.  ... " />
+            <marker date="1550744895899" expanded="true" signature="21101:21402" ph="/// Windows NT 3.51 and earlier: The WM_PAINTICON message is sent to a minimized window when the icon is to be pa ... " />
+            <marker date="1550744895899" expanded="true" signature="21447:21839" ph="/// Windows NT 3.51 and earlier: The WM_ICONERASEBKGND message is sent to a minimized window when the background  ... " />
+            <marker date="1550744895899" expanded="true" signature="21889:22080" ph="/// The WM_NEXTDLGCTL message is sent to a dialog box procedure to set the keyboard focus to a different control  ... " />
+            <marker date="1550744895899" expanded="true" signature="22126:22313" ph="/// The WM_SPOOLERSTATUS message is sent from Print Manager whenever a job is added to or removed from the Print  ... " />
+            <marker date="1550744895899" expanded="true" signature="22362:22610" ph="/// The WM_DRAWITEM message is sent to the parent window of an owner-drawn button, combo box, list box, or menu w ... " />
+            <marker date="1550744895899" expanded="true" signature="22654:22866" ph="/// The WM_MEASUREITEM message is sent to the owner window of a combo box, list box, list view control, or menu i ... " />
+            <marker date="1550744895899" expanded="true" signature="22913:23350" ph="/// Sent to the owner of a list box or combo box when the list box or combo box is destroyed or when items are re ... " />
+            <marker date="1550744895899" expanded="true" signature="23396:23565" ph="/// Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_KEYDOWN message.    ... " />
+            <marker date="1550744895899" expanded="true" signature="23611:23777" ph="/// Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_CHAR message.    ... " />
+            <marker date="1550744895899" expanded="true" signature="24879:25214" ph="/// The WM_NCHITTEST message is sent to a window when the cursor moves, or when a mouse button is pressed or rele ... " />
+            <marker date="1550744895899" expanded="true" signature="25259:25397" ph="/// The WM_NCPAINT message is sent to a window when its frame must be painted.    ... " />
+            <marker date="1550744895899" expanded="true" signature="25440:25633" ph="/// The WM_NCACTIVATE message is sent to a window when its nonclient area needs to be changed to indicate an acti ... " />
+            <marker date="1550744895899" expanded="true" signature="25679:26124" ph="/// The WM_GETDLGCODE message is sent to the window procedure associated with a control. By default, the system h ... " />
+            <marker date="1550744895899" expanded="true" signature="26170:26337" ph="/// The WM_SYNCPAINT message is used to synchronize painting while avoiding linking independent GUI threads.   ... " />
+            <marker date="1550744895899" expanded="true" signature="26382:26686" ph="/// The WM_NCMOUSEMOVE message is posted to a window when the cursor is moved within the nonclient area of the wi ... " />
+            <marker date="1550744895899" expanded="true" signature="26733:27064" ph="/// The WM_NCLBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is within ... " />
+            <marker date="1550744895899" expanded="true" signature="27113:27443" ph="/// The WM_NCLBUTTONUP message is posted when the user releases the left mouse button while the cursor is within  ... " />
+            <marker date="1550744895899" expanded="true" signature="27490:27829" ph="/// The WM_NCLBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor i ... " />
+            <marker date="1550744895899" expanded="true" signature="27880:28212" ph="/// The WM_NCRBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is withi ... " />
+            <marker date="1550744895899" expanded="true" signature="28261:28592" ph="/// The WM_NCRBUTTONUP message is posted when the user releases the right mouse button while the cursor is within ... " />
+            <marker date="1550744895899" expanded="true" signature="28639:28979" ph="/// The WM_NCRBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor  ... " />
+            <marker date="1550744895899" expanded="true" signature="29030:29363" ph="/// The WM_NCMBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is with ... " />
+            <marker date="1550744895899" expanded="true" signature="29412:29744" ph="/// The WM_NCMBUTTONUP message is posted when the user releases the middle mouse button while the cursor is withi ... " />
+            <marker date="1550744895899" expanded="true" signature="29791:30132" ph="/// The WM_NCMBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor ... " />
+            <marker date="1550744895899" expanded="true" signature="30183:30517" ph="/// The WM_NCXBUTTONDOWN message is posted when the user presses the first or second X button while the cursor is ... " />
+            <marker date="1550744895899" expanded="true" signature="30566:30899" ph="/// The WM_NCXBUTTONUP message is posted when the user releases the first or second X button while the cursor is  ... " />
+            <marker date="1550744895899" expanded="true" signature="30946:31288" ph="/// The WM_NCXBUTTONDBLCLK message is posted when the user double-clicks the first or second X button while the c ... " />
+            <marker date="1550744895899" expanded="true" signature="31339:31560" ph="/// The WM_INPUT_DEVICE_CHANGE message is sent to the window that registered to receive raw input. A window recei ... " />
+            <marker date="1550744895899" expanded="true" signature="31615:31748" ph="/// The WM_INPUT message is sent to the window that is getting raw input.    ... " />
+            <marker date="1550744895899" expanded="true" signature="31789:31895" ph="/// This message filters for keyboard messages.   ... " />
+            <marker date="1550744895899" expanded="true" signature="31939:32180" ph="/// The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem key is pressed. A non ... " />
+            <marker date="1550744895899" expanded="true" signature="32223:32535" ph="/// The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem key is released. A nons ... " />
+            <marker date="1550744895899" expanded="true" signature="32576:32858" ph="/// The WM_CHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translated b ... " />
+            <marker date="1550744895899" expanded="true" signature="32898:33450" ph="/// The WM_DEADCHAR message is posted to the window with the keyboard focus when a WM_KEYUP message is translated ... " />
+            <marker date="1550744895899" expanded="true" signature="33494:34020" ph="/// The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user presses the F10 key ( ... " />
+            <marker date="1550744895899" expanded="true" signature="34066:34546" ph="/// The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user releases a key that was ... " />
+            <marker date="1550744895899" expanded="true" signature="34590:34929" ph="/// The WM_SYSCHAR message is posted to the window with the keyboard focus when a WM_SYSKEYDOWN message is transl ... " />
+            <marker date="1550744895899" expanded="true" signature="34972:35320" ph="/// The WM_SYSDEADCHAR message is sent to the window with the keyboard focus when a WM_SYSKEYDOWN message is tran ... " />
+            <marker date="1550744895899" expanded="true" signature="35367:35931" ph="/// The WM_UNICHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translate ... " />
+            <marker date="1550744895899" expanded="true" signature="35974:36080" ph="/// This message filters for keyboard messages.   ... " />
+            <marker date="1550744895899" expanded="true" signature="36123:36343" ph="/// Sent immediately before the IME generates the composition string as a result of a keystroke. A window receive ... " />
+            <marker date="1550744895899" expanded="true" signature="36399:36580" ph="/// Sent to an application when the IME ends composition. A window receives this message through its WindowProc f ... " />
+            <marker date="1550744895899" expanded="true" signature="36634:36852" ph="/// Sent to an application when the IME changes composition status as a result of a keystroke. A window receives  ... " />
+            <marker date="1550744895899" expanded="true" signature="36937:37271" ph="/// The WM_INITDIALOG message is sent to the dialog box procedure immediately before a dialog box is displayed. D ... " />
+            <marker date="1550744895899" expanded="true" signature="37317:37575" ph="/// The WM_COMMAND message is sent when the user selects a command item from a menu, when a control sends a notif ... " />
+            <marker date="1550744895899" expanded="true" signature="37618:37916" ph="/// A window receives this message when the user chooses a command from the Window menu, clicks the maximize butt ... " />
+            <marker date="1550744895899" expanded="true" signature="37962:38184" ph="/// The WM_TIMER message is posted to the installing thread's message queue when a timer expires. The message is  ... " />
+            <marker date="1550744895899" expanded="true" signature="38225:38523" ph="/// The WM_HSCROLL message is sent to a window when a scroll event occurs in the window's standard horizontal scr ... " />
+            <marker date="1550744895899" expanded="true" signature="38566:38860" ph="/// The WM_VSCROLL message is sent to a window when a scroll event occurs in the window's standard vertical scrol ... " />
+            <marker date="1550744895899" expanded="true" signature="38903:39186" ph="/// The WM_INITMENU message is sent when a menu is about to become active. It occurs when the user clicks an item ... " />
+            <marker date="1550744895899" expanded="true" signature="39230:39494" ph="/// The WM_INITMENUPOPUP message is sent when a drop-down menu or submenu is about to become active. This allows  ... " />
+            <marker date="1550744895899" expanded="true" signature="39543:39700" ph="/// The WM_MENUSELECT message is sent to a menu's owner window when the user selects a menu item.    ... " />
+            <marker date="1550744895899" expanded="true" signature="39746:40006" ph="/// The WM_MENUCHAR message is sent when a menu is active and the user presses a key that does not correspond to  ... " />
+            <marker date="1550744895899" expanded="true" signature="40050:40372" ph="/// The WM_ENTERIDLE message is sent to the owner window of a modal dialog box or menu that is entering an idle s ... " />
+            <marker date="1550744895899" expanded="true" signature="40417:40599" ph="/// The WM_MENURBUTTONUP message is sent when the user releases the right mouse button while the cursor is on a m ... " />
+            <marker date="1550744895899" expanded="true" signature="40648:40813" ph="/// The WM_MENUDRAG message is sent to the owner of a drag-and-drop menu when the user drags a menu item.    ... " />
+            <marker date="1550744895899" expanded="true" signature="40857:41106" ph="/// The WM_MENUGETOBJECT message is sent to the owner of a drag-and-drop menu when the mouse cursor enters a menu ... " />
+            <marker date="1550744895899" expanded="true" signature="41155:41310" ph="/// The WM_UNINITMENUPOPUP message is sent when a drop-down menu or submenu has been destroyed.    ... " />
+            <marker date="1550744895899" expanded="true" signature="41361:41504" ph="/// The WM_MENUCOMMAND message is sent when the user makes a selection from a menu.    ... " />
+            <marker date="1550744895899" expanded="true" signature="41551:41729" ph="/// An application sends the WM_CHANGEUISTATE message to indicate that the user interface (UI) state should be ch ... " />
+            <marker date="1550744895899" expanded="true" signature="41778:41982" ph="/// An application sends the WM_UPDATEUISTATE message to change the user interface (UI) state for the specified w ... " />
+            <marker date="1550744895899" expanded="true" signature="42031:42198" ph="/// An application sends the WM_QUERYUISTATE message to retrieve the user interface (UI) state for a window.   ... " />
+            <marker date="1550744895899" expanded="true" signature="42246:42578" ph="/// The WM_CTLCOLORMSGBOX message is sent to the owner window of a message box before Windows draws the message b ... " />
+            <marker date="1550744895899" expanded="true" signature="42628:42987" ph="/// An edit control that is not read-only or disabled sends the WM_CTLCOLOREDIT message to its parent window when ... " />
+            <marker date="1550744895899" expanded="true" signature="43035:43334" ph="/// Sent to the parent window of a list box before the system draws the list box. By responding to this message,  ... " />
+            <marker date="1550744895899" expanded="true" signature="43385:43701" ph="/// The WM_CTLCOLORBTN message is sent to the parent window of a button before drawing the button. The parent win ... " />
+            <marker date="1550744895899" expanded="true" signature="43748:44038" ph="/// The WM_CTLCOLORDLG message is sent to a dialog box before the system draws the dialog box. By responding to t ... " />
+            <marker date="1550744895899" expanded="true" signature="44085:44412" ph="/// The WM_CTLCOLORSCROLLBAR message is sent to the parent window of a scroll bar control when the control is abo ... " />
+            <marker date="1550744895899" expanded="true" signature="44465:44846" ph="/// A static control, or an edit control that is read-only or disabled, sends the WM_CTLCOLORSTATIC message to it ... " />
+            <marker date="1550744895899" expanded="true" signature="44896:45044" ph="/// Use WM_MOUSEFIRST to specify the first mouse message. Use the PeekMessage() Function.   ... " />
+            <marker date="1550744895899" expanded="true" signature="45090:45390" ph="/// The WM_MOUSEMOVE message is posted to a window when the cursor moves. If the mouse is not captured, the messa ... " />
+            <marker date="1550744895899" expanded="true" signature="45435:45792" ph="/// The WM_LBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is in the c ... " />
+            <marker date="1550744895899" expanded="true" signature="45839:46195" ph="/// The WM_LBUTTONUP message is posted when the user releases the left mouse button while the cursor is in the cl ... " />
+            <marker date="1550744895899" expanded="true" signature="46240:46605" ph="/// The WM_LBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor is  ... " />
+            <marker date="1550744895899" expanded="true" signature="46654:47012" ph="/// The WM_RBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is in the  ... " />
+            <marker date="1550744895899" expanded="true" signature="47059:47416" ph="/// The WM_RBUTTONUP message is posted when the user releases the right mouse button while the cursor is in the c ... " />
+            <marker date="1550744895899" expanded="true" signature="47461:47827" ph="/// The WM_RBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor is ... " />
+            <marker date="1550744895899" expanded="true" signature="47876:48235" ph="/// The WM_MBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is in the ... " />
+            <marker date="1550744895899" expanded="true" signature="48282:48640" ph="/// The WM_MBUTTONUP message is posted when the user releases the middle mouse button while the cursor is in the  ... " />
+            <marker date="1550744895899" expanded="true" signature="48685:49052" ph="/// The WM_MBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor i ... " />
+            <marker date="1550744895899" expanded="true" signature="49101:49476" ph="/// The WM_MOUSEWHEEL message is sent to the focus window when the mouse wheel is rotated. The DefWindowProc func ... " />
+            <marker date="1550744895899" expanded="true" signature="49522:49887" ph="/// The WM_XBUTTONDOWN message is posted when the user presses the first or second X button while the cursor is i ... " />
+            <marker date="1550744895899" expanded="true" signature="49934:50297" ph="/// The WM_XBUTTONUP message is posted when the user releases the first or second X button while the cursor is in ... " />
+            <marker date="1550744895899" expanded="true" signature="50342:50714" ph="/// The WM_XBUTTONDBLCLK message is posted when the user double-clicks the first or second X button while the cur ... " />
+            <marker date="1550744895899" expanded="true" signature="50763:51169" ph="/// The WM_MOUSEHWHEEL message is sent to the focus window when the mouse's horizontal scroll wheel is tilted or  ... " />
+            <marker date="1550744895899" expanded="true" signature="51216:51364" ph="/// Use WM_MOUSELAST to specify the last mouse message. Used with PeekMessage() Function.   ... " />
+            <marker date="1550744895899" expanded="true" signature="51409:51958" ph="/// The WM_PARENTNOTIFY message is sent to the parent of a child window when the child window is created or destr ... " />
+            <marker date="1550744895899" expanded="true" signature="52006:52186" ph="/// The WM_ENTERMENULOOP message informs an application's main window procedure that a menu modal loop has been e ... " />
+            <marker date="1550744895899" expanded="true" signature="52235:52413" ph="/// The WM_EXITMENULOOP message informs an application's main window procedure that a menu modal loop has been ex ... " />
+            <marker date="1550744895899" expanded="true" signature="52461:52667" ph="/// The WM_NEXTMENU message is sent to an application when the right or left arrow key is used to switch between  ... " />
+            <marker date="1550744895899" expanded="true" signature="52711:52987" ph="/// The WM_SIZING message is sent to a window that the user is resizing. By processing this message, an applicati ... " />
+            <marker date="1550744895899" expanded="true" signature="53029:53177" ph="/// The WM_CAPTURECHANGED message is sent to the window that is losing the mouse capture.   ... " />
+            <marker date="1550744895899" expanded="true" signature="53227:53483" ph="/// The WM_MOVING message is sent to a window that the user is moving. By processing this message, an application ... " />
+            <marker date="1550744895899" expanded="true" signature="53525:53653" ph="/// Notifies applications that a power-management event has occurred.   ... " />
+            <marker date="1550744895899" expanded="true" signature="53703:53860" ph="/// Notifies an application of a change to the hardware configuration of a device or the computer.   ... " />
+            <marker date="1550744895899" expanded="true" signature="53908:54101" ph="/// An application sends the WM_MDICREATE message to a multiple-document interface (MDI) client window to create  ... " />
+            <marker date="1550744895899" expanded="true" signature="54146:54339" ph="/// An application sends the WM_MDIDESTROY message to a multiple-document interface (MDI) client window to close  ... " />
+            <marker date="1550744895899" expanded="true" signature="54385:54621" ph="/// An application sends the WM_MDIACTIVATE message to a multiple-document interface (MDI) client window to instr ... " />
+            <marker date="1550744895899" expanded="true" signature="54668:54896" ph="/// An application sends the WM_MDIRESTORE message to a multiple-document interface (MDI) client window to restor ... " />
+            <marker date="1550744895899" expanded="true" signature="54942:55149" ph="/// An application sends the WM_MDINEXT message to a multiple-document interface (MDI) client window to activate  ... " />
+            <marker date="1550744895899" expanded="true" signature="55192:55746" ph="/// An application sends the WM_MDIMAXIMIZE message to a multiple-document interface (MDI) client window to maxim ... " />
+            <marker date="1550744895899" expanded="true" signature="55793:56011" ph="/// An application sends the WM_MDITILE message to a multiple-document interface (MDI) client window to arrange a ... " />
+            <marker date="1550744895899" expanded="true" signature="56054:56271" ph="/// An application sends the WM_MDICASCADE message to a multiple-document interface (MDI) client window to arrang ... " />
+            <marker date="1550744895899" expanded="true" signature="56317:56585" ph="/// An application sends the WM_MDIICONARRANGE message to a multiple-document interface (MDI) client window to ar ... " />
+            <marker date="1550744895899" expanded="true" signature="56635:56855" ph="/// An application sends the WM_MDIGETACTIVE message to a multiple-document interface (MDI) client window to retr ... " />
+            <marker date="1550744895899" expanded="true" signature="56903:57174" ph="/// An application sends the WM_MDISETMENU message to a multiple-document interface (MDI) client window to replac ... " />
+            <marker date="1550744895899" expanded="true" signature="57220:57845" ph="/// The WM_ENTERSIZEMOVE message is sent one time to a window after it enters the moving or sizing modal loop. Th ... " />
+            <marker date="1550744895899" expanded="true" signature="57894:58396" ph="/// The WM_EXITSIZEMOVE message is sent one time to a window, after it has exited the moving or sizing modal loop ... " />
+            <marker date="1550744895899" expanded="true" signature="58444:58630" ph="/// Sent when the user drops a file on the window of an application that has registered itself as a recipient of  ... " />
+            <marker date="1550744895899" expanded="true" signature="58675:58894" ph="/// An application sends the WM_MDIREFRESHMENU message to a multiple-document interface (MDI) client window to re ... " />
+            <marker date="1550744895899" expanded="true" signature="58944:59122" ph="/// Sent to an application when a window is activated. A window receives this message through its WindowProc func ... " />
+            <marker date="1550744895899" expanded="true" signature="59172:59365" ph="/// Sent to an application to notify it of changes to the IME window. A window receives this message through its  ... " />
+            <marker date="1550744895899" expanded="true" signature="61362:61918" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="62001:62219" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="63887:64299" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="64114:64254" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="65968:66249" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="66728:67133" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="66852:66965" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="66985:67096" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="74167:74288" ph="/* [DllImport(&quot;user32.dll&quot;)] ... */" />
+            <marker date="1550744895899" expanded="true" signature="76311:76407" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="77995:78301" ph="{...}" />
+            <marker date="1550744895899" expanded="true" signature="78018:78291" ph="/* StringBuilder Buff = new StringBuilder(256); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WinG/Controls/Classes/Icon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <marker date="1550745042290" expanded="false" signature="6:178" ph="..." />
+            <marker date="1550745042290" expanded="true" signature="194:928" ph="{...}" />
+            <marker date="1550745042290" expanded="true" signature="218:926" ph="{...}" />
+            <marker date="1550745042290" expanded="true" signature="305:395" ph="{...}" />
+            <marker date="1550745042290" expanded="true" signature="459:543" ph="{...}" />
+            <marker date="1550745042290" expanded="true" signature="597:732" ph="{...}" />
+            <marker date="1550745042290" expanded="true" signature="791:920" ph="{...}" />
           </folding>
         </state>
       </provider>

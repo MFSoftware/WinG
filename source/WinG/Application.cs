@@ -43,7 +43,7 @@ namespace WinG
 
         public static UInt16 RegisterClass(string menu, string className)
         {
-            Core.Core.WNDCLASSEX wcx = new Core.Core.WNDCLASSEX();
+            var wcx = new Core.Core.WNDCLASSEX();
             wcx.cbSize = Marshal.SizeOf(wcx);
             wcx.style = (int)(Core.Core.ClassStyles.VerticalRedraw | Core.Core.ClassStyles.HorizontalRedraw);
             wcx.lpfnWndProc = Marshal.GetFunctionPointerForDelegate((Delegate)(Core.Core.WndProc)MainWndProc);

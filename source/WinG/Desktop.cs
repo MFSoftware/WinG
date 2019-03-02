@@ -11,18 +11,18 @@ namespace WinG
     {
         public static void HideTaskBar()
         {
-            IntPtr hWndDesktop = Core.Core.GetDesktopWindow();
-            IntPtr hWndStartButton = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "button", string.Empty);
-            IntPtr hWndTaskBar = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "Shell_TrayWnd", string.Empty);
+            var hWndDesktop = Core.Core.GetDesktopWindow();
+            var hWndStartButton = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "button", string.Empty);
+            var hWndTaskBar = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "Shell_TrayWnd", string.Empty);
             Core.Core.SetWindowPos(hWndStartButton, 0, 0, 0, 0, 0, 0x0080);
             Core.Core.SetWindowPos(hWndTaskBar, 0, 0, 0, 0, 0, 0x0080);
         }
 
         public static void ShowTaskBar()
         {
-            IntPtr hWndDesktop = Core.Core.GetDesktopWindow();
-            IntPtr hWndStartButton = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "button", string.Empty);
-            IntPtr hWndTaskBar = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "Shell_TrayWnd", string.Empty);
+            var hWndDesktop = Core.Core.GetDesktopWindow();
+            var hWndStartButton = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "button", string.Empty);
+            var hWndTaskBar = Core.Core.FindWindowEx(hWndDesktop, IntPtr.Zero, "Shell_TrayWnd", string.Empty);
             Core.Core.SetWindowPos(hWndStartButton, 0, 0, 0, 0, 0, 0x0040);
             Core.Core.SetWindowPos(hWndTaskBar, 0, 0, 0, 0, 0, 0x0040);
         }

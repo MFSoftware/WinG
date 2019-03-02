@@ -17,7 +17,7 @@ namespace WinG
             set => Core.Core.SetWindowText(Handle, value);
             get
             {
-                StringBuilder buff = new StringBuilder(256);
+                var buff = new StringBuilder(256);
                 return Core.Core.GetWindowText(Handle, buff, 256) > 0 ? buff.ToString() : null;
             }
         }
