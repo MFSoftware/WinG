@@ -23,7 +23,6 @@
 
 ### **Future plans**
 • Add work with clipboard,
-
 • Add events
 
 ## **How to build**
