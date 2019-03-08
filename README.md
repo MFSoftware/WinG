@@ -10,9 +10,7 @@
 
 ### **Benefits**
 • Small size,
-
-• High speed
-
+• High speed,
 • Supported platforms:
 - Linux *
 - Windows
